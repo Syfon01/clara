@@ -474,3 +474,7 @@ img, svg {
   color: #292669;
   margin-left: 30px;
 }
+.navbar-toggler{
+  background: #ff9901;
+  border: 1px solid #ff610b;
+}

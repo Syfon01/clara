@@ -2,6 +2,7 @@
 body{
   color: #2A2B4A;
   font-family: 'DM Sans', sans-serif;;
+  overflow-x: hidden!important;
 }
 p{
   color: #524f98;

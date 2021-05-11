@@ -10,22 +10,41 @@
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
   </head>
   <body>
-    <section class="cover container-fluid" id="bg-primary">
-      <div class="container pt-5">
+    <section class="cover container-fluid">
         <div class="row">
-          <div class="col-md-4 login-bg card-height d-none d-md-block d-lg-block d-xl-block">
-            <div class="p-3">
+          <div class="col-md-4 login-bg card-height d-none d-md-block d-lg-block d-xl-block p-4"  id="bg-primary">
+            <div class="p-3 text-center">
               <img src="./assets/img/clara_logo.png" class="img-fluid logo" alt="" srcset="">
             </div>
+            <div class="p-3 mt-5">
+              <h3 class="mb-4 text-inverse fw-bold">
+                One time Registration
+                <span class="text-info-login">.</span>
+              </h3>
+              <div class="d-flex wise-layout-container__text-block__item text-white">
+                <ul>
+                  <li class="mb-4">
+                    Provide Correct Details
+                  </li>
+                  <li class="mb-4">
+                    Passsword should be more than 6 characters
+                  </li>
+                  <!-- <li class="mb-4">
+                    Ensure you enter the same email and password you used to register.
+                  </li> -->
+                </ul>
+              </div>
+              
+              </div>
           </div>
           <div class="col-md-8 login-side  bg-white text-dark">
             <div class="container p-2">
               <div class="">
-                <a href="./home.html" type="button" class="close close-btn " aria-label="Close">
+                <a href="./index.html" type="button" class="close close-btn " aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </a>
                 <div class="col-lg-10 col-xl-8 mx-auto pd-t-100 pd-md-t-50 pd-lg-t-20 text-center welcome-reg-div welcome-div">
-                  <h1 class="tx-36 fw-bold mb-2">Let’s get started</h1>
+                  <h1 class="tx-36 fw-bold mb-2 mt-5">Let’s get started</h1>
                   <p class="tx-18">Please complete to create your account.</p>
   
                       <form class="p-3">
@@ -67,13 +86,12 @@
                         </div>
                       </form>
   
-                      <a href="./login.html"><span class="text-dark text-center">Already have an account?</span> Sign in.</a>
+                      <a href="./login.html" class="tx-primary"><span class="text-dark text-center">Already have an account?</span> Sign in.</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       
     </section>
   

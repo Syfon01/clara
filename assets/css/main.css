@@ -447,7 +447,7 @@ img, svg {
   background: url('../img/welcome.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 85vh;
+  min-height: 100vh;
 }
 .login-side{
   height: 85vh;

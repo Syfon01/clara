@@ -45,7 +45,7 @@
       </div>
     </nav>
     <section class="header py-5" id="">
-      <div class="container py-5">
+      <div class="container pt-5">
         <div class="row justify-content-between py-5 mob-pad">
           <div class="col-md-6 col-12 py-5 mob-pad">
               <h1 class="tx-72 fw-bolder mb-5">Clara Bureau De Change</h1>
@@ -54,77 +54,96 @@
 
           </div>
           <div class="col-md-5 col-12">
-            <div class="card bg-transparent shadow mt-3 border-0" >
-              <div class="card-body p-lg-5">
+            <div class="" >
+              <div class="card-body p-lg-2 p-0">
                 <form action="">
                   <div class="form-group">
-                    <label for="" class="mb-1">Exchange From</label>
-                    <div class="input-group mb-3">
-                      <input type="" class="form-control wd-25" aria-label="" placeholder="1000">
-                      <select class="box" aria-label="Default select example">
-                        <option selected>🇺🇸 USD</option>
-                        <option value="1">🇺🇸 USD</option>
-                        <option value="2">🇬🇧 GBP</option>
-                        <option value="3">🇪🇺 EUR</option>
-                        <option value="4">🇳🇬 NGN</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row px-3">
-                    <div class="mb-3 col-md-4 col-4 pe-0 pt-1">
-                      <p class="tx-14 tx-gray pt-1 mb-0">
-                        <i class="fa fa-cog fa-spin fa-primary"></i>
-                        <span class=" currency-value">5:0 </span> (USD)
-                      </p>
-
-                    </div>
-                    <div class="mb-3 col-md-8 col-8 ps-0">
-                      <div class="d-flex">
-                        <select class="form-control boxx" id="currency">
-                          <option selected> Choose method</option>
-                          <option value="3.0"> Domicillary transfer <span>(3.0)</span></option>
-                          <option value="2.0"> Bank Payment <span>(2.0)</span></option>
-                        </select>
-                      
-                        <p class="tx-14 tx-gray pt-1 mb-0"><span class="ms-1">fee </p>
-
+                    <div class="money-input-form-group form-group form-group-lg m-b-0">
+                      <label class="control-label" for="tw-calculator-source">You send</label>
+                      <div class="tw-money-input input-group input-group-lg">
+                        <input type="text" id="tw-calculator-source" value="1,000" inputmode="decimal" class="form-control" placeholder="" autocomplete="off">
+                        <div class="input-group-btn amount-currency-select-btn">
+                      <div class="tw-select btn-group btn-block dropdown">
+                        <select class="box" aria-label="Default select example">
+                          <option selected>🇺🇸 USD</option>
+                          <option value="1">🇺🇸 USD</option>
+                          <option value="2">🇬🇧 GBP</option>
+                          <option value="3">🇪🇺 EUR</option>
+                          <option value="4">🇳🇬 NGN</option>
+                        </select> 
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-
-                  <div class="mb-3 ps-3">
-                    <p class="tx-14 tx-gray mb-0">
-                      <i class="fa fa-cog fa-spin fa-primary"></i>
-                      <span class="me-4">850:0 (USD)
-                      </span> 
-                      Amount we'll deposit
-                    </p>
-                  </div>
-                  <div class="mb-3 px-3">
-                    <p class="tx-14 tx-gray mb-0">
-                      <i class="fa fa-cog fa-spin fa-red"></i>
-                      <span class="me-5 fw-bold text-dark">490.00
-                      </span> 
-                      Conversion Rate
-                    </p>
-                  </div>
-
+                  <ul class="timeline">
+                    <li>
+                      <div class="timeline-token">
+                        <i class="fa fa-minus"></i>
+                      </div>
+                      <div class="timeline-panel">
+                        <span>
+                          <span class=" currency-value me-4">5:0  (USD)</span>
+                        </span>
+                        <span>
+                          <select class="boxx ms-4" id="currency">
+                            <option selected> Choose method</option>
+                            <option value="3.0"> Domicillary transfer <span>(3.0)</span></option>
+                            <option value="2.0"> Bank Payment <span>(2.0)</span></option>
+                          </select>
+                        </span>
+                        <span>
+                          <span class="tx-14 pt-1 mb-0">fee </span>
+                        </span>
+                      </div>
+                    </li>
+                    <li class="">
+                      <div class="timeline-token">
+                        <i class="fa fa-equals fw-bold tx-14">=</i>
+                      </div>
+                      <div class="timeline-panel">
+                        <span>
+                          <span class="me-4">850:0 (USD)
+                        </span>
+                        <span class="ms-1">
+                          Amount we'll deposit
+                        </span>
+                      </div>
+                    </li>
+                    <li class="">
+                      <div class="timeline-token">
+                        <i class="fa fa-times"></i>
+                      </div>
+                      <div class="timeline-panel">
+                        <span class="me-5 fw-bold">490 NGN</span>
+                        <span>
+                          Conversion Rate
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                
                   <div class="mb-3 ">
-                    <label for="" class="mb-1">Exchange To</label>
-                    <div class="input-group mb-3">
-                      <input type="" class="form-control wd-25" aria-label="" placeholder="350,000">
-                      <select class="box" aria-label="Default select example">
-                        <option selected>🇳🇬 NGN</option>
-                        <option value="1">🇺🇸 USD</option>
-                        <option value="2">🇬🇧 GBP</option>
-                        <option value="3">🇪🇺 EUR</option>
-                        <option value="4">🇳🇬 NGN</option>
-                      </select>
+                    <div class="money-input-form-group form-group form-group-lg m-b-0">
+                      <label class="control-label" for="tw-calculator-source">Exchange To</label>
+                      <div class="tw-money-input input-group input-group-lg">
+                        <input type="text" id="tw-calculator-source" value="1,000" inputmode="decimal" class="form-control" placeholder="" autocomplete="off">
+                        <div class="input-group-btn amount-currency-select-btn">
+                      <div class="tw-select btn-group btn-block dropdown">
+                        <select class="box" aria-label="Default select example">
+                          <option selected>🇳🇬 NGN</option>
+                          <option value="1">🇺🇸 USD</option>
+                          <option value="2">🇬🇧 GBP</option>
+                          <option value="3">🇪🇺 EUR</option>
+                          <option value="4">🇳🇬 NGN</option>
+                        </select> 
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="mt-5">
-                    <button class="btn btn-primary
-                     w-100">Get Started</button>
+                  <div class="mt-4">
+                    <button class="btn btn-primary btn-lg w-100">Get Started</button>
                   </div>
                 </form>
               </div>
@@ -188,69 +207,14 @@
       </div>
       
     </section>
-    <div class="parallaxx"></div>
    
-    <section id="bg-white" class="bg-white">
-      <div class="container py-5">
-        <h1 class="text-center">How we carry out our Exchange</h1>
-        <p class="text-center col-lg-10 mx-auto">We find and compare the best money transfer price for your needs, getting you the best exchange rate possible, while exposing the hidden fees and carrying seamless transaction</p>
-        <div class="row bg-white">
-          <div class="col-lg-6 bg-white" data-aos="fade-up-left" data-aos-duration="1000">
-              <div class="feature-box">
-                  <div class="tumb">
-                      <img src="assets/img/feature-icon-1.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="text-box">
-                      <h3 class="subtitlee">Cost</h3>
-                      <p class="">
-                          The cost of a currency conversion is a hugely important factor
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up-right" data-aos-duration="1000">
-              <div class="feature-box">
-                  <div class="tumb">
-                      <img src="assets/img/feature-icon-2.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="text-box">
-                      <h3 class="subtitlee">Speed</h3>
-                      <p class="">Deliver money transfers instantly or within a few days.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
-              <div class="feature-box">
-                  <div class="tumb">
-                      <img src="assets/img/feature-icon-3.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="text-box">
-                      <h3 class="subtitlee">Payment Options</h3>
-                      <p class="">Two methods of payment options available for your convenient</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-              <div class="feature-box">
-                  <div class="tumb">
-                      <img src="assets/img/feature-icon-4.png" alt="" class="img-fluid">
-                  </div>
-                  <div class="text-box">
-                      <h3 class="subtitlee">Currencies Available</h3>
-                      <p class="">We currently have three currencies available at the moment (Euro, Pound and Dollars) </p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
-    </section>
-    <div class="parallaxxx"></div>
+   
     <section class="info bg-white">
       <div class="container py-5">
         <div class="row ">
           <div class="col-md-5 exchang py-2">
             <div class="px-md-5">
-              <img src="./assets/img/eexchange.jpg" class="img-fluid exchange-img" alt="">
+              <img src="./assets/img/rate.jpg" class="img-fluid exchange-img" alt="">
             </div>
           </div>
           <div class="col-md-7 col-12 card-height py-2">
@@ -293,6 +257,57 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="" class="bg-gray">
+      <div class="container py-5 text-center">
+        <h1 class="text-center">How we carry out our Exchange</h1>
+        <p class="text-center col-lg-10 mx-auto">We find and compare the best money transfer price for your needs, getting you the best exchange rate possible, while exposing the hidden fees and carrying seamless transaction</p>
+        <div class="row row-equal-height">
+          <div class="col-xs-12 col-sm-6 col-lg-4 my-3">
+          <article class="tw-instruction">
+            <img src="./assets/img/exhange1.svg" alt="" class="img-fluid">
+            <h4>1. Register for free.
+            </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus placeat explicabo incidunt minim
+
+            </p>
+          </article>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-4 my-3">
+          <article class="tw-instruction">
+            <img src="./assets/img/exchange2.svg" alt="" class="img-fluid">
+            <h4>2. Choose an amount to send.  </h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid incidunt laudantium, natus iusto et rem!</p>
+          </article>
+        </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 my-3">
+            <article class="tw-instruction">
+            <img src="./assets/img/exchange3.svg" alt="" class="img-fluid">
+            <h4>3. Add recipient’s bank details. </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, commodi.</p></article>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 my-3">
+            <article class="tw-instruction">
+              <img src="./assets/img/exchange4.svg" alt="" class="img-fluid">
+              <h4>4. Verify your identity.  </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam ea perspiciatis est omnis quod.</p></article>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 my-3">
+            <article class="tw-instruction">
+              <img src="./assets/img/exchange5.svg" alt="" class="img-fluid">
+              <h4>5.Pay for your transfer. </h4>
+              <p>Send your money with a bank transfer, or a debit or credit card.</p>
+            </article>
+          </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4 my-3">
+              <article class="tw-instruction">
+                <img src="./assets/img/exchange6.svg" alt="" class="img-fluid">
+                <h4>6. That’s it</h4>
+              <p>We’ll handle the rest. You can track your transfer in your account, and we'll tell your recipient it's coming.</p>
+            </article>
           </div>
         </div>
       </div>
@@ -402,7 +417,25 @@
         </div>
     </div>
     </section>
-
+    <section class="bg-gray" id="safety">
+      <div class="container py-5">
+      <div class="row vertical-align-center justify-content-between">
+      <div class="hidden-xs hidden-sm col-md-4">
+      <img loading="lazy" src="./assets/img/secure.svg" alt="Wise is safe and secure" class="img-fluid img-max-height">
+      </div>
+      <div class="col-xs-12 col-md-6">
+      <h2 class="m-b-2 colored-dot colored-dot-info pt-5">Clara is safe and secure</h2>
+      <div class="m-b-2">
+      <p>
+      <span>Clara is an authorised Bureau De ChangeInstitution independently regulated by the Financial authourities of Nigeria.</span>
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint a asperiores doloremque excepturi delectus voluptatum officiis temporibus voluptates aspernatur.</p>
+      <p class="m-b-2"><strong>We're trusted by over 1 million people and counting.</strong></p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
      <!-- ======= Testimonials Section ======= -->
      <section id="testimonials" class="testimonials">
 

@@ -3,15 +3,15 @@
   scroll-behavior: smooth;
 }
 body{
-  color: #2A2B4A;
+  color: #111827;
   font-family: 'DM Sans', sans-serif;;
   overflow-x: hidden!important;
 }
 p{
-  color: #524f98;
+  color: #ff610b;
 }
 a{
-  color: #2A2B4A;
+  color: #111827;
 }
 .nav-link{
   padding: 0.3rem 1rem!important;
@@ -21,7 +21,7 @@ a{
   border-bottom:2px solid #ff610b;
 }
 .subtitle{
-  color: #4b47be;
+  color: #ff610b;
 }
 .fa-primary{
   color: #f9d71c!important;
@@ -39,12 +39,12 @@ a{
   background-color: #ff610b;
 }
 .tx-rate{
-  color: #2A2B4A;
+  color: #111827;
   font-weight: 600;
 }
 
 .btn-start{
-  background-color: #2A2B4A;
+  background-color: #111827;
   font-weight: 600;
   color: #fff;
 }
@@ -90,8 +90,8 @@ a{
 .tx-36{
   font-size: 2.7rem!important;
 }
-.tx-gray{
-  color: #ced4da;
+.tx-gray, .card-text{
+  color: #4B5563;
 }
 .tx-14{
   font-size: 14px!important;
@@ -132,7 +132,7 @@ a{
     font-weight: 400;
     line-height: 1.5;
     color: #fff;
-    background-color: #2A2B4A;
+    background-color: #111827;
     background-image: url("../img/chevron-down.svg");
     background-repeat: no-repeat;
     background-position: right .75rem center;
@@ -257,7 +257,7 @@ img, svg {
 }
 
 .accordion-button.collapsed{
-  border: none;
+  border: none!important;
 }
 .faq .accordion .accordion-item:first-child {
   margin-top: 0;
@@ -271,11 +271,19 @@ img, svg {
   border-radius: 10px;
   background-color: white;
   box-shadow: 9.272px 3.746px 38px 0px rgb(176 163 231 / 26%);
-  border: none;
+  border: none!important;
+}
+
+.accordion-button:not(.collapsed){
+  color: #ff610b!important;
+}
+.accordion-button:focus{
+  border-color: #ff610b!important;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 
 .faq .accordion .accordion-item .accordion-collapse {
-  border: none;
+  border: none!important;
   border-top: 0;
   border-radius: 0px 0px 10px 10px;
   background-color: white;
@@ -290,7 +298,7 @@ img, svg {
   animation: dan-bam 3s linear infinite;
 }
 .footer,.bg-pri{
-  background-color: #2A2B4A;
+  background-color: #111827;
   color: #fff;
 }
 .payment-img{
@@ -416,7 +424,7 @@ img, svg {
   /* Timeline Token */
   .timeline-token {
     color: white;
-    background-color: #2A2B4A;
+    background-color: #111827;
     position: absolute;
     /* left: 50%; */
     box-sizing: border-box;
@@ -675,7 +683,7 @@ img, svg {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  color: #2A2B4A;
+  color: #111827;
 }
 
 .footer .footer-newsletter form {
@@ -745,7 +753,7 @@ img, svg {
   font-size: 42px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #2A2B4A;
+  color: #111827;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -767,13 +775,13 @@ img, svg {
 }
 
 .footer .footer-top .social-links a:hover {
-  color: #2A2B4A;
+  color: #111827;
 }
 
 .footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #2A2B4A;
+  color: #111827;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -807,7 +815,7 @@ img, svg {
 }
 
 .footer .footer-top .footer-links ul a {
-  color: #2A2B4A;
+  color: #111827;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -824,14 +832,14 @@ img, svg {
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #2A2B4A;
+  color: #111827;
 }
 
 .footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #2A2B4A;
+  color: #111827;
 }
 @media (min-width: 768px){
   .timeline {
@@ -876,7 +884,7 @@ img, svg {
 /* Timeline Token */
 .timeline-token {
   color: white;
-  background-color: #2A2B4A;
+  background-color: #111827;
   position: absolute;
   /* left: 50%; */
   box-sizing: border-box;
@@ -941,7 +949,7 @@ img, svg {
 .tw-instruction {
   width: 100%;
   padding: 24px 20px;
-  border: none;
+  border: none!important;
   border-radius: 3px;
   box-shadow: 0 0 30px 0 rgb(226 230 232 / 30%);
   background-size: 100%;

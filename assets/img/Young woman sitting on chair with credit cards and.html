@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)https://www.vectorstock.com/royalty-free-vector/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<script src="./Young woman sitting on chair with credit cards and_files/nr-1208.min.js"></script><script type="text/javascript" async="" src="./Young woman sitting on chair with credit cards and_files/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-flviDSD9v4jk/5R8dfmwuv/TjjtrqG71QqiMHXEdc2uJSKVKau85FnvYQXVXEpRR" nonce="dRIoTx/p8vA34ypf5sd0vfFt3lB4//zCnpvv3WIwdng="></script><script type="text/javascript" nonce="dRIoTx/p8vA34ypf5sd0vfFt3lB4//zCnpvv3WIwdng=">(window.NREUM||(NREUM={})).loader_config={licenseKey:"02e09611df",applicationID:"156179534"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="csrf-name" content="csrf60a4c2b67db44">
+	<meta name="csrf-value" content="b66aca4c5694ef06a47bb6cf7807f8e0">
+	
+	<meta name="cart-hash" content="d751713988987e9331980363e24189ce">
+	<meta name="twitter:site" content="@VectorStock">
+	<meta property="og:site_name" content="VectorStock">
+	<meta property="fb:app_id" content="241100862642313">
+	
+	<link rel="dns-prefetch" href="https://cdn.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn1.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn2.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn3.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn4.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn5.vectorstock.com/">
+	<link rel="shortcut icon" href="https://cdn.vectorstock.com/img/icons/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="VectorStock Search" href="https://www.vectorstock.com/xml/searchbox.xml">
+
+	<title>Young woman sitting on chair with credit cards and</title>
+	<meta name="description" content="Young Woman Sitting on Chair with Credit Cards and Sack with Dollars nearby Working on Laptop. Money Transfer and Currency Exchange Online Service Digital Technologies Cartoon Flat Vector Illustration. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions..">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.vectorstock.com/royalty-free-vector/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513">
+	<meta property="og:title" content="Young woman sitting on chair with credit cards and vector image on VectorStock">
+	<meta property="og:description" content="Young Woman Sitting on Chair with Credit Cards and Sack with Dollars nearby Working on Laptop. Money Transfer and Currency Exchange Online Service Digital Technologies Cartoon Flat Vector Illustration. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+	<meta property="og:image" content="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg">
+	<meta property="og:image:url" content="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg">
+	<meta property="og:image:secure_url" content="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="1000">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://www.vectorstock.com/royalty-free-vector/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513">
+	<meta name="twitter:title" content="Young woman sitting on chair with credit cards and vector image">
+	<meta name="twitter:description" content="Young Woman Sitting on Chair with Credit Cards and Sack with Dollars nearby Working on Laptop. Money Transfer and Currency Exchange Online Service Digital Technologies Cartoon Flat Vector Illustration">
+	<meta name="twitter:image" content="https://cdn4.vectorstock.com/i/thumb-large/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg">
+	<meta name="twitter:image:width" content="238">
+	<meta name="twitter:image:height" content="250">
+
+	<link rel="canonical" href="https://www.vectorstock.com/royalty-free-vector/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513">
+
+	<link rel="stylesheet" type="text/css" href="./Young woman sitting on chair with credit cards and_files/common1620697554.min.css">
+	<link rel="stylesheet" type="text/css" href="./Young woman sitting on chair with credit cards and_files/vector1620697554.min.css">
+	<script async="" src="./Young woman sitting on chair with credit cards and_files/js"></script>
+	<script src="./Young woman sitting on chair with credit cards and_files/common1620710167.min.js"></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script>
+	<script src="./Young woman sitting on chair with credit cards and_files/vector1620710167.min.js"></script>
+	<script src="./Young woman sitting on chair with credit cards and_files/api.js" async="" defer=""></script>
+</head>
+<body cz-shortcut-listen="true">
+
+<!-- Top header -->
+<header>
+	<nav class="top">
+		<figure>
+			<a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a>
+		</figure>
+
+		<div class="grid">
+			<form id="searchbox" class="empty">
+				<div class="wrap">
+					<fieldset>
+						<div class="contents">
+							<div class="tags">
+								<ul></ul>
+							</div>
+							<div class="input">
+								<input type="text" name="input" autocomplete="off" autocapitalize="none" spellcheck="true" value="" placeholder="Search…" maxlength="50" autofocus="">
+								<button type="button" data-action="clear">×</button>
+							</div>
+
+							<input type="hidden" name="category" value="">
+							<input type="hidden" name="custom_srp" value="">
+							<input type="hidden" name="artist" value="">
+							<input type="hidden" name="similar" value="">
+						</div>
+					<div class="suggestions"><div></div></div></fieldset>
+
+					<button type="submit">
+						<span class="icon">Search</span>
+					</button>
+				</div>
+			</form>
+			<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+		</div>
+
+		<div class="aside">
+			<ul>
+				<li><a href="https://www.vectorstock.com/popular-categories" title="Popular Categories">Categories</a></li>
+				<li><a href="https://www.vectorstock.com/pricing" title="Pricing">Pricing</a></li>
+				<li class="account">
+					<button type="button" data-action="signup">Sign Up</button>
+					<button type="button" data-action="login">Login</button>
+				</li>
+			</ul>
+		</div>
+
+		<div id="mobilenav-icon">
+			<span></span><span></span><span></span><span></span>
+		</div>
+	</nav>
+
+	<!-- Submenu -->
+		<nav id="searchrelated"></nav>	
+
+		<!-- Mobile menu -->
+	<div id="mobilenav-menu">
+		<div>
+			<div class="group">
+				<h4>Browse</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+			</div>
+			<div class="group">
+				<h4>Account</h4>
+				<ul>
+					<li class="account">
+							<ul>
+								<li><a href="https://www.vectorstock.com/signup">Sign Up</a></li>
+								<li data-action="login"><a href="https://www.vectorstock.com/?login=1">Login…</a></li>
+								<li><a href="https://www.vectorstock.com/pricing">Pricing</a></li>
+							</ul>
+						</li>
+				</ul>
+				<form method="get" action="https://www.vectorstock.com/auth/logout" class="logout">
+					<input type="hidden" name="logout" value="1">
+				</form>
+			</div>
+			<div class="group">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/faq"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+					<li><a href="https://www.vectorstock.com/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<!-- Account Menu Tabs -->
+		<aside id="nav_sidebar" class="tabs tabsDark">
+
+			<nav>
+				<ul role="tablist">
+					<li data-tab-id="signup" class=""><span role="tab"><span>Sign Up</span></span></li>
+					<li data-tab-id="login" class="selected"><span role="tab"><span>Log In</span></span></li>
+				</ul>
+			</nav>
+
+			<section id="sb_signup" data-tab-id="signup" class="">
+				<div class="primary">
+					<p>New to VectorStock?</p>
+					<p><em>We're the largest royalty-free, vector-only stock agency in the world.</em></p>
+					<p>Every week we add new premium graphics by the thousands.</p>
+				</div>
+				<div class="secondary">
+					<p>Whether you're a global ad&nbsp;agency or a freelance graphic designer, we have the vector graphics to make your project come to life.</p>
+					<p>Buy Vectors, sell Vectors or both. <a href="https://www.vectorstock.com/signup">Sign up now, it’s free.</a></p>
+				</div>
+				<div class="footer">
+					<button class="master">
+						<span class="title">Sign Up...</span>
+						<span class="value">
+							<span class="symbol signup"></span>
+						</span>
+					</button>
+				</div>
+			</section>
+
+			<section id="sb_login" data-tab-id="login" class="selected">
+				<form action="https://www.vectorstock.com/auth/login" method="post">
+
+
+					<fieldset class="">
+						<label for="vs_username">Email / Username</label>
+						<div class="textfield">
+							<input type="text" id="vs_username" name="vs_username" value="" autocomplete="on" tabindex="1">
+						</div>
+					</fieldset>
+					<fieldset class="">
+						<label for="vs_password">Password</label>
+						<button type="button" class="forgot">Forgot Password</button>
+						<div class="textfield">
+							<input type="password" id="vs_password" name="vs_password" value="" autocomplete="on" tabindex="2" maxlength="72">
+						</div>
+					</fieldset>
+					<fieldset>
+						<div class="checkbox checked">
+							<label class="selected" for="vs_remember">
+								<span class="title">Stay Logged In</span>
+								<span class="icon"></span>
+								<input type="checkbox" id="vs_remember" name="vs_remember" value="yes" tabindex="3" checked="">
+							</label>
+						</div>
+					</fieldset>
+
+
+					<button type="submit" tabindex="4">Log In</button>
+				</form>
+				<div class="alternatives">
+					<h6>Or Login With</h6>
+					<ul>
+						<li class="gp"><a href="https://www.vectorstock.com/">
+							<span class="title">Google</span>
+							<span class="icon"></span>
+						</a></li>
+						<li class="fb"><a href="https://www.vectorstock.com/">
+							<span class="title">Facebook</span>
+							<span class="icon"></span>
+						</a></li>
+					</ul>
+				</div>
+
+				
+			</section>
+		</aside>
+
+	<!-- Page -->
+	<article>
+		<section id="vs-asset" style="min-height: 742px; max-width: 820px;">
+
+			<!-- Aside -->
+			<div class="aside">
+				<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors">
+							<span itemprop="name">Royalty Free Vectors</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors/money-vectors">
+							<span itemprop="name">Money Vectors</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</li>
+				</ol>
+
+				<h1>
+					Young woman sitting on chair with credit cards and vector&nbsp;image																			</h1>
+
+				<figure style="padding-top: 99%;" class="target reveal">
+					<div class="highres" data-src="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg">
+						<noscript><img src="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg" title="Young woman sitting on chair with credit cards and vector image" alt="Young woman sitting on chair with credit cards and"></noscript>
+					<img src="./Young woman sitting on chair with credit cards and_files/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg"></div>
+					<div class="lowres">
+						<img src="./Young woman sitting on chair with credit cards and_files/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513(1).jpg" title="Young woman sitting on chair with credit cards and vector image" alt="Young woman sitting on chair with credit cards and">
+					</div>
+					<div class="overlay"></div>
+				</figure>
+
+				<form data-loggedin="0" data-licenses="2" data-license="standard" data-status="" data-payment="single-image">
+					<input type="hidden" id="vector_id" value="29238513">
+					<input type="hidden" id="vector_title" value="Young woman sitting on chair with credit cards and">
+					<input type="hidden" id="vector_description" value="Young Woman Sitting on Chair with Credit Cards and Sack with Dollars nearby Working on Laptop. Money Transfer and Currency Exchange Online Service Digital Technologies Cartoon Flat Vector Illustration. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+					<input type="hidden" id="vector_url" value="https://www.vectorstock.com/royalty-free-vector/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513">
+					<input type="hidden" id="vector_media" value="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg">
+					<input type="hidden" id="vector_ratio" value="1">
+					<input type="hidden" id="vector_license_status" value="">
+					<input type="hidden" id="artist_name" value="woodhouse84">
+					<input type="hidden" id="account_user" value="0">
+
+					<input type="hidden" id="vector_download_urls" value="[]">
+					<input type="hidden" id="vector_license_options" value="[{&quot;type&quot;:&quot;standard&quot;,&quot;cost&quot;:{&quot;single-image&quot;:14.99,&quot;credits&quot;:1,&quot;subscription&quot;:1}},{&quot;type&quot;:&quot;expanded&quot;,&quot;cost&quot;:{&quot;single-image&quot;:39.99,&quot;credits&quot;:30}}]">
+					<input type="hidden" id="account_filetype" value="zip">
+					<input type="hidden" id="account_customizations" value="[]">
+					<input type="hidden" id="account_cloud" value="[{&quot;type&quot;:&quot;googledrive&quot;,&quot;status&quot;:&quot;connect&quot;},{&quot;type&quot;:&quot;dropbox&quot;,&quot;status&quot;:&quot;connect&quot;}]">
+					
+					<div class="options">
+						<!--
+						-- OPTION: License type
+						-->
+						<div class="option" data-type="license" data-license="standard" data-licenses="2">
+							<h6><span class="type">License</span><a href="https://www.vectorstock.com/faq/members/standard-license">Learn More</a></h6>
+							<div class="optgroup radgroup">
+								<fieldset>
+									<label for="f_license_standard" class="checked">
+										<input type="radio" id="f_license_standard" name="license" value="standard" checked="checked" tabindex="2">
+										<span class="label">Standard</span>
+										<span class="descr">For Print, Advertising, Design</span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_license_expanded">
+										<input type="radio" id="f_license_expanded" name="license" value="expanded" tabindex="4">
+										<span class="label">Expanded</span>
+										<span class="descr">For Resale &amp; Reproduction</span>
+									</label>
+								</fieldset>
+							</div>
+
+							<div class="help">
+								<p>The license type determines how you can use this image.</p>
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+																						<th data-license="standard">Std.</th>																						<th data-license="expanded">Exp.</th>										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td>Print / Editorial</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Graphic Design</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Web Design</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Social Media</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Edit &amp; Modify</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Multi-user</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Resale Items</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Unlimited Runs</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<!--
+						-- OPTION: Payment options (Standard)
+						-->
+						<div class="option" data-type="payment" data-license="standard">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/pricing">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="standard">
+								<fieldset>
+									<label for="f_payment_standard_single-image" class="checked">
+										<input type="radio" id="f_payment_standard_single-image" name="payment_standard" data-cost="14.99" value="single-image" checked="checked" tabindex="5">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>14.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_credits">
+										<input type="radio" id="f_payment_standard_credits" name="payment_standard" data-cost="1" value="credits" tabindex="6">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>1.00</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_subscription">
+										<input type="radio" id="f_payment_standard_subscription" name="payment_standard" data-cost="1" value="subscription" tabindex="7">
+										<span class="label">Subscription</span>
+										<span class="value"><small>$</small><var>0.69</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>There are three ways to pay for Standard licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Image Price</th>
+										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>14.99</span>
+												</span>
+												<span class="byline">One-time payment</span>
+											</td>
+										</tr>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>1</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1). Minimum purchase of 30.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Subscription Plan</span>
+													<span class="dm"></span>
+													<span class="dd"><em>From</em> 69c</span>
+												</span>
+												<span class="byline">Choose a monthly plan. Unused downloads automatically roll into following month.</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--
+						-- OPTION: Payment options (Expanded)
+						-->
+						<div class="option" data-type="payment" data-license="expanded">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="expanded">
+								<fieldset>
+									<label for="f_payment_expanded_single-image" class="checked">
+										<input type="radio" id="f_payment_expanded_single-image" name="payment_expanded" data-cost="39.99" value="single-image" checked="checked" tabindex="8">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>39.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_expanded_credits">
+										<input type="radio" id="f_payment_expanded_credits" name="payment_expanded" data-cost="30" value="credits" tabindex="9">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>30.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+														<div class="help">
+								<p>There are two ways to pay for Expanded licenses. Prices are $<abbr title="United States Dollars">US</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Cost per Image</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>39.99</span>
+												</span>
+												<span class="byline">One-off payment, no signup needed.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>30</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1).</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+													</div>
+						<!--
+						-- OPTION: Customization
+						-->
+						<div class="option" data-type="customization">
+							<h6><span class="type">New Option!</span><a href="https://www.vectorstock.com/faq/members/what-is-hire-a-designer">What is this?</a></h6>
+							<div class="optgroup chkgroup">
+								<fieldset>
+									<label for="f_payment_customization">
+										<input type="checkbox" id="f_payment_customization" name="payment_customization" data-cost="85" value="customization" tabindex="12">
+										<span class="label">Customize image</span>
+										<span class="descr">Only available with Pay-per-Image</span>
+										<span class="value"><small>$</small><var>85.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>Love the image but just need a few modifications? Let our talented artists do the work for you!</p>
+								<p>We’ll connect you with a designer who can make updates and send you the artwork in a format of your choice.</p>
+								<h4>Examples</h4>
+								<ul>
+									<li>Change the text</li>
+									<li>Modify colors</li>
+									<li>Resize to new dimensions</li>
+									<li>Include logo or symbol</li>
+									<li>Add your company or business name</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="download">
+						<button type="button" data-action="download">
+							<span class="label">Download Image</span>
+							<span class="icon"></span>
+						</button>
+						<h6><span class="label">Files Included</span></h6>
+						<div class="help">
+							<span class="loading"><span class="label">Loading Details...</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="image">
+				<figure data-orientation="square" style="padding-top: 99%;" class="target reveal">
+					<div class="highres" data-src="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg">
+						<noscript><img src="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg" title="Young woman sitting on chair with credit cards and vector image" alt="Young woman sitting on chair with credit cards and"></noscript>
+					<img src="./Young woman sitting on chair with credit cards and_files/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg"></div>
+					<div class="lowres">
+						<img src="./Young woman sitting on chair with credit cards and_files/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513(1).jpg" title="Young woman sitting on chair with credit cards and vector image" alt="Young woman sitting on chair with credit cards and">
+					</div>
+					<div class="overlay"></div>
+					<div class="panels">
+						<div class="share">
+							<h4>Share with others</h4>
+							<ul>
+								<li class="pinterest"><button type="button" data-action="pinterest"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M12.5,0C5.6,0,0,5.6,0,12.5c0,5.12,3.08,9.52,7.48,11.45c-0.03-0.87-0.01-1.92,0.22-2.87c0.24-1.01,1.61-6.81,1.61-6.81s-0.4-0.8-0.4-1.98c0-1.85,1.07-3.24,2.41-3.24c1.14,0,1.69,0.85,1.69,1.88c0,1.14-0.73,2.85-1.1,4.44c-0.31,1.33,0.67,2.41,1.97,2.41c2.37,0,3.96-3.04,3.96-6.65c0-2.74-1.85-4.79-5.2-4.79c-3.79,0-6.15,2.83-6.15,5.99c0,1.09,0.32,1.86,0.82,2.45c0.23,0.27,0.26,0.38,0.18,0.7c-0.06,0.23-0.2,0.78-0.25,1c-0.08,0.32-0.34,0.43-0.63,0.31c-1.75-0.71-2.56-2.62-2.56-4.77c0-3.55,3-7.81,8.93-7.81c4.77,0,7.91,3.45,7.91,7.16c0,4.9-2.73,8.57-6.75,8.57c-1.35,0-2.62-0.73-3.05-1.56c0,0-0.73,2.88-0.88,3.44c-0.27,0.96-0.78,1.93-1.26,2.68C10.08,24.82,11.27,25,12.5,25C19.4,25,25,19.4,25,12.5S19.4,0,12.5,0L12.5,0z"></path></svg></span><span class="label">Pinterest</span></span></button></li>
+								<li class="facebook"><button type="button" data-action="facebook"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.44,1H2.56C1.7,1,1,1.7,1,2.56v19.88C1,23.3,1.7,24,2.56,24h10.41v-8.89H9.98v-3.46h2.99V9.1c0-2.96,1.81-4.58,4.45-4.58c1.27,0,2.35,0.09,2.67,0.14v3.1l-1.83,0c-1.44,0-1.72,0.68-1.72,1.69v2.21h3.43l-0.45,3.46h-2.98V24h5.89C23.3,24,24,23.3,24,22.44V2.56C24,1.7,23.3,1,22.44,1z"></path></svg></span><span class="label">Facebook</span></span></button></li>
+								<li class="twitter"><button type="button" data-action="twitter"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M7.86,22.5c9.43,0,14.59-7.69,14.59-14.37c0-0.22,0-0.44-0.01-0.65c1-0.71,1.87-1.6,2.56-2.61c-0.92,0.4-1.91,0.67-2.95,0.79c1.06-0.62,1.87-1.61,2.26-2.79c-0.99,0.58-2.09,1-3.26,1.23c-0.94-0.98-2.27-1.6-3.74-1.6c-2.83,0-5.13,2.26-5.13,5.05c0,0.4,0.05,0.78,0.13,1.15C8.05,8.49,4.27,6.48,1.74,3.42C1.3,4.17,1.05,5.04,1.05,5.96c0,1.75,0.91,3.3,2.28,4.2C2.49,10.14,1.7,9.91,1,9.53C1,9.55,1,9.58,1,9.6c0,2.45,1.77,4.49,4.11,4.95c-0.43,0.12-0.88,0.18-1.35,0.18c-0.33,0-0.65-0.03-0.96-0.09c0.65,2.01,2.55,3.47,4.79,3.51C5.84,19.5,3.63,20.3,1.22,20.3c-0.41,0-0.82-0.02-1.22-0.07C2.27,21.66,4.97,22.5,7.86,22.5"></path></svg></span><span class="label">Twitter</span></span></button></li>
+								<li class="email"><button type="button" data-action="email"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.48,4.17H2.52C1.13,4.17,0,5.3,0,6.69v11.62c0,1.39,1.13,2.52,2.52,2.52h19.96c1.39,0,2.52-1.13,2.52-2.52V6.69C25,5.3,23.87,4.17,22.48,4.17z M23.49,18.31c0,0.56-0.45,1.01-1.01,1.01H2.52c-0.55,0-1.01-0.45-1.01-1.01V6.69c0-0.56,0.45-1.01,1.01-1.01h19.96c0.56,0,1.01,0.45,1.01,1.01V18.31z"></path><path d="M19.95,7.95l-7.45,4.83L5.05,7.95C4.7,7.72,4.24,7.82,4.01,8.17C3.78,8.52,3.88,8.99,4.23,9.22l7.86,5.1c0.13,0.08,0.27,0.12,0.41,0.12s0.29-0.04,0.41-0.12l7.86-5.1c0.35-0.23,0.45-0.7,0.22-1.05C20.77,7.82,20.3,7.72,19.95,7.95z"></path></svg></span><span class="label">Email</span></span></button></li>
+							</ul>
+						</div>
+						<div class="composite">
+							<button type="button" data-action="download"><span><span class="label">Download JPG Preview Image</span></span></button>
+						</div>
+					</div>
+				</figure>
+				<div class="details">
+					<div class="meta">
+						<ul>
+							<li class="meta-id">
+								<dl><dt>Image ID</dt><dd>29238513</dd></dl>
+							</li>
+							<li class="meta-artist">
+								<dl>
+									<dt>Artist</dt>
+									<dd>
+										<a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_woodhouse84" rel="nofollow">woodhouse84</a>
+										<button type="button" data-action="follow" title="Follow Artists that you like to create a newsfeed of their recent images."><span class="label">Follow</span></button>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="options" data-total="2">
+						<ul>
+							<li class="opt-like">
+								<button type="button" data-action="like" data-count="0"><span class="icon">♥</span><span class="label">Like</span><span class="tally"></span></button>
+							</li>
+							<li class="opt-cart">
+								<button type="button" data-action="cart"><span class="icon">+</span><span class="label">Cart</span></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Metadata -->
+			<div class="metadata">
+				<div itemtype="http://schema.org/ImageObject" itemscope="">
+					<img src="./Young woman sitting on chair with credit cards and_files/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg" itemprop="contentUrl" alt="Young woman sitting on chair with credit cards and vector">
+					<meta itemprop="url" content="https://cdn4.vectorstock.com/i/1000x1000/85/13/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513.jpg">
+					<meta itemprop="name" content="Young woman sitting on chair with credit cards and">
+					<meta itemprop="description" content="Young Woman Sitting on Chair with Credit Cards and Sack with Dollars nearby Working on Laptop. Money Transfer and Currency Exchange Online Service Digital Technologies Cartoon Flat Vector Illustration. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions. vector image">
+					<meta itemprop="datePublished" content="2020-02-09">
+					<meta itemprop="fileFormat" content="image/jpeg">
+					<meta itemprop="acquireLicensePage" content="https://www.vectorstock.com/royalty-free-vector/young-woman-sitting-on-chair-with-credit-cards-and-vector-29238513">
+					<meta itemprop="license" content="https://www.vectorstock.com/faq/members/standard-license">
+					<meta itemprop="sourceOrganization" content="VectorStock.com">
+				</div>
+			</div>
+			
+		</section>
+
+
+		<section id="vs-related">
+						<div id="group-similar" class="group">
+				<h6><span class="icon"></span><strong>Similar Images</strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/88/79/tiny-man-sit-on-huge-purse-working-on-laptop-vector-29638879.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/tiny-man-sit-on-huge-purse-working-on-laptop-vector-29638879" title="tiny man sit on huge purse working on laptop vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/88/79/tiny-man-sit-on-huge-purse-working-on-laptop-vector-29638879.jpg" title="tiny man sit on huge purse working on laptop" alt="tiny man sit on huge purse working on laptop vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/tiny-man-sit-on-huge-purse-working-on-laptop-vector-29638879.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/65/62/hand-woman-holding-credit-card-and-dollar-vector-21296562.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/hand-woman-holding-credit-card-and-dollar-vector-21296562" title="hand woman holding credit card and dollar vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/65/62/hand-woman-holding-credit-card-and-dollar-vector-21296562.jpg" title="hand woman holding credit card and dollar" alt="hand woman holding credit card and dollar vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/hand-woman-holding-credit-card-and-dollar-vector-21296562.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/93/01/transaction-security-web-page-global-network-vector-23879301.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/transaction-security-web-page-global-network-vector-23879301" title="transaction security web page global network vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/93/01/transaction-security-web-page-global-network-vector-23879301.jpg" title="transaction security web page global network" alt="transaction security web page global network vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/transaction-security-web-page-global-network-vector-23879301.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/17/94/currency-exchange-concept-for-web-banner-vector-26921794.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/currency-exchange-concept-for-web-banner-vector-26921794" title="currency exchange concept for web banner vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/17/94/currency-exchange-concept-for-web-banner-vector-26921794.jpg" title="currency exchange concept for web banner" alt="currency exchange concept for web banner vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/currency-exchange-concept-for-web-banner-vector-26921794.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/57/74/young-woman-using-atm-cartoon-people-characters-vector-21475774.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/young-woman-using-atm-cartoon-people-characters-vector-21475774" title="young woman using atm - cartoon people characters vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/57/74/young-woman-using-atm-cartoon-people-characters-vector-21475774.jpg" title="young woman using atm - cartoon people characters" alt="young woman using atm - cartoon people characters vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/young-woman-using-atm-cartoon-people-characters-vector-21475774.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/38/14/mobile-phone-and-falling-gold-coin-credit-card-vector-30433814.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-phone-and-falling-gold-coin-credit-card-vector-30433814" title="mobile phone and falling gold coin credit card vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/38/14/mobile-phone-and-falling-gold-coin-credit-card-vector-30433814.jpg" title="mobile phone and falling gold coin credit card" alt="mobile phone and falling gold coin credit card vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/mobile-phone-and-falling-gold-coin-credit-card-vector-30433814.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/61/78/girl-operates-mobile-bankingmobile-banking-vector-21666178.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/girl-operates-mobile-bankingmobile-banking-vector-21666178" title="girl operates mobile bankingmobile banking vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/61/78/girl-operates-mobile-bankingmobile-banking-vector-21666178.jpg" title="girl operates mobile bankingmobile banking" alt="girl operates mobile bankingmobile banking vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/girl-operates-mobile-bankingmobile-banking-vector-21666178.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/69/55/online-banking-payment-vector-29816955.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/online-banking-payment-vector-29816955" title="online banking payment vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/69/55/online-banking-payment-vector-29816955.jpg" title="online banking payment" alt="online banking payment vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/online-banking-payment-vector-29816955.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/48/42/concept-mobile-payments-online-money-transfer-vector-29644842.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/concept-mobile-payments-online-money-transfer-vector-29644842" title="concept mobile payments online money transfer vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/48/42/concept-mobile-payments-online-money-transfer-vector-29644842.jpg" title="concept mobile payments online money transfer" alt="concept mobile payments online money transfer vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/concept-mobile-payments-online-money-transfer-vector-29644842.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/74/90/earth-globe-with-money-vector-29767490.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/earth-globe-with-money-vector-29767490" title="earth globe with money vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/74/90/earth-globe-with-money-vector-29767490.jpg" title="earth globe with money" alt="earth globe with money vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/earth-globe-with-money-vector-29767490.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/39/27/woman-make-online-payment-with-mobile-phone-vector-28973927.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/woman-make-online-payment-with-mobile-phone-vector-28973927" title="woman make online payment with mobile phone vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/39/27/woman-make-online-payment-with-mobile-phone-vector-28973927.jpg" title="woman make online payment with mobile phone" alt="woman make online payment with mobile phone vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/woman-make-online-payment-with-mobile-phone-vector-28973927.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/43/46/bank-office-interior-with-meeting-people-and-vector-32824346.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/bank-office-interior-with-meeting-people-and-vector-32824346" title="bank office interior with meeting people and vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/43/46/bank-office-interior-with-meeting-people-and-vector-32824346.jpg" title="bank office interior with meeting people and" alt="bank office interior with meeting people and vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/bank-office-interior-with-meeting-people-and-vector-32824346.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/96/50/online-shopping-technology-business-concept-vector-34479650.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/online-shopping-technology-business-concept-vector-34479650" title="online shopping technology business concept vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/96/50/online-shopping-technology-business-concept-vector-34479650.jpg" title="online shopping technology business concept" alt="online shopping technology business concept vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/online-shopping-technology-business-concept-vector-34479650.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/99/94/online-banking-thin-line-icons-set-vector-23909994.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/online-banking-thin-line-icons-set-vector-23909994" title="online banking thin line icons set vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/99/94/online-banking-thin-line-icons-set-vector-23909994.jpg" title="online banking thin line icons set" alt="online banking thin line icons set vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/online-banking-thin-line-icons-set-vector-23909994.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/56/83/world-globe-icon-with-dollar-currency-symbol-vector-20755683.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/world-globe-icon-with-dollar-currency-symbol-vector-20755683" title="world globe icon with dollar currency symbol vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/56/83/world-globe-icon-with-dollar-currency-symbol-vector-20755683.jpg" title="world globe icon with dollar currency symbol" alt="world globe icon with dollar currency symbol vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/world-globe-icon-with-dollar-currency-symbol-vector-20755683.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/44/61/web-page-template-with-bank-financing-money-vector-35594461.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/web-page-template-with-bank-financing-money-vector-35594461" title="web page template with bank financing money vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/44/61/web-page-template-with-bank-financing-money-vector-35594461.jpg" title="web page template with bank financing money" alt="web page template with bank financing money vector image"></noscript><img src="./Young woman sitting on chair with credit cards and_files/web-page-template-with-bank-financing-money-vector-35594461.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/08/05/internet-banking-icons-vector-30660805.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/internet-banking-icons-vector-30660805" title="internet banking icons vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/08/05/internet-banking-icons-vector-30660805.jpg" title="internet banking icons" alt="internet banking icons vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/37/69/3d-conceptual-online-vs-vector-37223769.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/3d-conceptual-online-vs-vector-37223769" title="3d conceptual online vs vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/37/69/3d-conceptual-online-vs-vector-37223769.jpg" title="3d conceptual online vs" alt="3d conceptual online vs vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/67/24/pay-online-payment-with-mobile-and-money-transfer-vector-33286724.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/pay-online-payment-with-mobile-and-money-transfer-vector-33286724" title="pay online payment with mobile and money transfer vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/67/24/pay-online-payment-with-mobile-and-money-transfer-vector-33286724.jpg" title="pay online payment with mobile and money transfer" alt="pay online payment with mobile and money transfer vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/54/27/33-business-and-office-line-style-icons-vector-23265427.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/33-business-and-office-line-style-icons-vector-23265427" title="33 business and office line style icons vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/54/27/33-business-and-office-line-style-icons-vector-23265427.jpg" title="33 business and office line style icons" alt="33 business and office line style icons vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="24897122" data-title="world with coin global cash money transfers" data-src="https://cdn3.vectorstock.com/i/thumbs/71/22/world-with-coin-global-cash-money-transfers-vector-24897122.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/world-with-coin-global-cash-money-transfers-vector-24897122" title="world with coin global cash money transfers vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/71/22/world-with-coin-global-cash-money-transfers-vector-24897122.jpg" title="world with coin global cash money transfers" alt="world with coin global cash money transfers vector image"></noscript></a></li>
+						<li data-id="32711885" data-title="global money transfer line icon earth with credit" data-src="https://cdn1.vectorstock.com/i/thumbs/18/85/global-money-transfer-line-icon-earth-with-credit-vector-32711885.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/global-money-transfer-line-icon-earth-with-credit-vector-32711885" title="global money transfer line icon earth with credit vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/18/85/global-money-transfer-line-icon-earth-with-credit-vector-32711885.jpg" title="global money transfer line icon earth with credit" alt="global money transfer line icon earth with credit vector image"></noscript></a></li>
+						<li data-id="35532506" data-title="flat bank" data-src="https://cdn2.vectorstock.com/i/thumbs/25/06/flat-bank-vector-35532506.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/flat-bank-vector-35532506" title="flat bank vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/25/06/flat-bank-vector-35532506.jpg" title="flat bank" alt="flat bank vector image"></noscript></a></li>
+						<li data-id="30379674" data-title="wallet with money and cash business finance" data-src="https://cdn5.vectorstock.com/i/thumbs/96/74/wallet-with-money-and-cash-business-finance-vector-30379674.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/wallet-with-money-and-cash-business-finance-vector-30379674" title="wallet with money and cash business finance vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/96/74/wallet-with-money-and-cash-business-finance-vector-30379674.jpg" title="wallet with money and cash business finance" alt="wallet with money and cash business finance vector image"></noscript></a></li>
+						<li data-id="31632115" data-title="abstract character concept" data-src="https://cdn1.vectorstock.com/i/thumbs/21/15/abstract-character-concept-vector-31632115.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/abstract-character-concept-vector-31632115" title="abstract character concept vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/21/15/abstract-character-concept-vector-31632115.jpg" title="abstract character concept" alt="abstract character concept vector image"></noscript></a></li>
+						<li data-id="35289204" data-title="bank queue people standing in row to bank worker" data-src="https://cdn5.vectorstock.com/i/thumbs/92/04/bank-queue-people-standing-in-row-to-bank-worker-vector-35289204.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bank-queue-people-standing-in-row-to-bank-worker-vector-35289204" title="bank queue people standing in row to bank worker vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/92/04/bank-queue-people-standing-in-row-to-bank-worker-vector-35289204.jpg" title="bank queue people standing in row to bank worker" alt="bank queue people standing in row to bank worker vector image"></noscript></a></li>
+						<li data-id="34068974" data-title="banking icons set thin line" data-src="https://cdn5.vectorstock.com/i/thumbs/89/74/banking-icons-set-thin-line-vector-34068974.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/banking-icons-set-thin-line-vector-34068974" title="banking icons set thin line vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/89/74/banking-icons-set-thin-line-vector-34068974.jpg" title="banking icons set thin line" alt="banking icons set thin line vector image"></noscript></a></li>
+						<li data-id="33726034" data-title="businesswoman who can make huge profits from" data-src="https://cdn5.vectorstock.com/i/thumbs/60/34/businesswoman-who-can-make-huge-profits-from-vector-33726034.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/businesswoman-who-can-make-huge-profits-from-vector-33726034" title="businesswoman who can make huge profits from vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/60/34/businesswoman-who-can-make-huge-profits-from-vector-33726034.jpg" title="businesswoman who can make huge profits from" alt="businesswoman who can make huge profits from vector image"></noscript></a></li>
+						<li data-id="23500078" data-title="money transfer global currency stock exchange" data-src="https://cdn4.vectorstock.com/i/thumbs/00/78/money-transfer-global-currency-stock-exchange-vector-23500078.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/money-transfer-global-currency-stock-exchange-vector-23500078" title="money transfer global currency stock exchange vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/00/78/money-transfer-global-currency-stock-exchange-vector-23500078.jpg" title="money transfer global currency stock exchange" alt="money transfer global currency stock exchange vector image"></noscript></a></li>
+						<li data-id="22985791" data-title="cryptocurrency digital money payment" data-src="https://cdn2.vectorstock.com/i/thumbs/57/91/cryptocurrency-digital-money-payment-vector-22985791.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cryptocurrency-digital-money-payment-vector-22985791" title="cryptocurrency digital money payment vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/57/91/cryptocurrency-digital-money-payment-vector-22985791.jpg" title="cryptocurrency digital money payment" alt="cryptocurrency digital money payment vector image"></noscript></a></li>
+						<li data-id="22962970" data-title="online transaction icon internet banking safety" data-src="https://cdn1.vectorstock.com/i/thumbs/29/70/online-transaction-icon-internet-banking-safety-vector-22962970.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/online-transaction-icon-internet-banking-safety-vector-22962970" title="online transaction icon internet banking safety vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/29/70/online-transaction-icon-internet-banking-safety-vector-22962970.jpg" title="online transaction icon internet banking safety" alt="online transaction icon internet banking safety vector image"></noscript></a></li>
+						<li data-id="25469227" data-title="payment banking icon" data-src="https://cdn3.vectorstock.com/i/thumbs/92/27/payment-banking-icon-vector-25469227.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/payment-banking-icon-vector-25469227" title="payment banking icon vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/92/27/payment-banking-icon-vector-25469227.jpg" title="payment banking icon" alt="payment banking icon vector image"></noscript></a></li>
+						<li data-id="35988490" data-title="payment method icon set" data-src="https://cdn1.vectorstock.com/i/thumbs/84/90/payment-method-icon-set-vector-35988490.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/payment-method-icon-set-vector-35988490" title="payment method icon set vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/84/90/payment-method-icon-set-vector-35988490.jpg" title="payment method icon set" alt="payment method icon set vector image"></noscript></a></li>
+						<li data-id="28995899" data-title="business people applies technology to improve" data-src="https://cdn5.vectorstock.com/i/thumbs/58/99/business-people-applies-technology-to-improve-vector-28995899.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/business-people-applies-technology-to-improve-vector-28995899" title="business people applies technology to improve vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/58/99/business-people-applies-technology-to-improve-vector-28995899.jpg" title="business people applies technology to improve" alt="business people applies technology to improve vector image"></noscript></a></li>
+						<li data-id="23065030" data-title="isometric banking process infographic concept" data-src="https://cdn1.vectorstock.com/i/thumbs/50/30/isometric-banking-process-infographic-concept-vector-23065030.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/isometric-banking-process-infographic-concept-vector-23065030" title="isometric banking process infographic concept vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/50/30/isometric-banking-process-infographic-concept-vector-23065030.jpg" title="isometric banking process infographic concept" alt="isometric banking process infographic concept vector image"></noscript></a></li>
+						<li data-id="20739938" data-title="set banking finance money icons payments and" data-src="https://cdn4.vectorstock.com/i/thumbs/99/38/set-banking-finance-money-icons-payments-and-vector-20739938.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-banking-finance-money-icons-payments-and-vector-20739938" title="set banking finance money icons payments and vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/99/38/set-banking-finance-money-icons-payments-and-vector-20739938.jpg" title="set banking finance money icons payments and" alt="set banking finance money icons payments and vector image"></noscript></a></li>
+						<li data-id="35112205" data-title="atm icon doodle hand drawn or outline icon style" data-src="https://cdn1.vectorstock.com/i/thumbs/22/05/atm-icon-doodle-hand-drawn-or-outline-icon-style-vector-35112205.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/atm-icon-doodle-hand-drawn-or-outline-icon-style-vector-35112205" title="atm icon doodle hand drawn or outline icon style vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/22/05/atm-icon-doodle-hand-drawn-or-outline-icon-style-vector-35112205.jpg" title="atm icon doodle hand drawn or outline icon style" alt="atm icon doodle hand drawn or outline icon style vector image"></noscript></a></li>
+						<li data-id="36630878" data-title="sending and receiving money" data-src="https://cdn4.vectorstock.com/i/thumbs/08/78/sending-and-receiving-money-vector-36630878.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/sending-and-receiving-money-vector-36630878" title="sending and receiving money vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/08/78/sending-and-receiving-money-vector-36630878.jpg" title="sending and receiving money" alt="sending and receiving money vector image"></noscript></a></li>
+						<li data-id="34702203" data-title="hand with card and money" data-src="https://cdn4.vectorstock.com/i/thumbs/22/03/hand-with-card-and-money-vector-34702203.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/hand-with-card-and-money-vector-34702203" title="hand with card and money vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/22/03/hand-with-card-and-money-vector-34702203.jpg" title="hand with card and money" alt="hand with card and money vector image"></noscript></a></li>
+						<li data-id="21032168" data-title="online finance" data-src="https://cdn4.vectorstock.com/i/thumbs/21/68/online-finance-vector-21032168.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/online-finance-vector-21032168" title="online finance vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/21/68/online-finance-vector-21032168.jpg" title="online finance" alt="online finance vector image"></noscript></a></li>
+						<li data-id="27436392" data-title="cash and credit card icon linear icon on white" data-src="https://cdn3.vectorstock.com/i/thumbs/63/92/cash-and-credit-card-icon-linear-icon-on-white-vector-27436392.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/cash-and-credit-card-icon-linear-icon-on-white-vector-27436392" title="cash and credit card icon linear icon on white vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/63/92/cash-and-credit-card-icon-linear-icon-on-white-vector-27436392.jpg" title="cash and credit card icon linear icon on white" alt="cash and credit card icon linear icon on white vector image"></noscript></a></li>
+						<li data-id="27624169" data-title="electronic wallet on cellphone icon flat" data-src="https://cdn5.vectorstock.com/i/thumbs/41/69/electronic-wallet-on-cellphone-icon-flat-vector-27624169.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/electronic-wallet-on-cellphone-icon-flat-vector-27624169" title="electronic wallet on cellphone icon flat vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/41/69/electronic-wallet-on-cellphone-icon-flat-vector-27624169.jpg" title="electronic wallet on cellphone icon flat" alt="electronic wallet on cellphone icon flat vector image"></noscript></a></li>
+						<li data-id="28147559" data-title="hand holding phone mobile payment transfer" data-src="https://cdn5.vectorstock.com/i/thumbs/75/59/hand-holding-phone-mobile-payment-transfer-vector-28147559.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/hand-holding-phone-mobile-payment-transfer-vector-28147559" title="hand holding phone mobile payment transfer vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/75/59/hand-holding-phone-mobile-payment-transfer-vector-28147559.jpg" title="hand holding phone mobile payment transfer" alt="hand holding phone mobile payment transfer vector image"></noscript></a></li>
+						<li data-id="24175121" data-title="money hold icon" data-src="https://cdn2.vectorstock.com/i/thumbs/51/21/money-hold-icon-vector-24175121.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/money-hold-icon-vector-24175121" title="money hold icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/51/21/money-hold-icon-vector-24175121.jpg" title="money hold icon" alt="money hold icon vector image"></noscript></a></li>
+						<li data-id="20963023" data-title="lines and bitcoins seamless pattern" data-src="https://cdn4.vectorstock.com/i/thumbs/30/23/lines-and-bitcoins-seamless-pattern-vector-20963023.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/lines-and-bitcoins-seamless-pattern-vector-20963023" title="lines and bitcoins seamless pattern vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/30/23/lines-and-bitcoins-seamless-pattern-vector-20963023.jpg" title="lines and bitcoins seamless pattern" alt="lines and bitcoins seamless pattern vector image"></noscript></a></li>
+						<li data-id="36298906" data-title="happy smiling woman sitting with laptop and" data-src="https://cdn2.vectorstock.com/i/thumbs/89/06/happy-smiling-woman-sitting-with-laptop-and-vector-36298906.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/happy-smiling-woman-sitting-with-laptop-and-vector-36298906" title="happy smiling woman sitting with laptop and vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/89/06/happy-smiling-woman-sitting-with-laptop-and-vector-36298906.jpg" title="happy smiling woman sitting with laptop and" alt="happy smiling woman sitting with laptop and vector image"></noscript></a></li>
+						<li data-id="22308679" data-title="bitcoin and cryptocurrency improvement and" data-src="https://cdn5.vectorstock.com/i/thumbs/86/79/bitcoin-and-cryptocurrency-improvement-and-vector-22308679.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/bitcoin-and-cryptocurrency-improvement-and-vector-22308679" title="bitcoin and cryptocurrency improvement and vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/86/79/bitcoin-and-cryptocurrency-improvement-and-vector-22308679.jpg" title="bitcoin and cryptocurrency improvement and" alt="bitcoin and cryptocurrency improvement and vector image"></noscript></a></li>
+						<li data-id="34338650" data-title="mobile banking credit card payment line and bold" data-src="https://cdn1.vectorstock.com/i/thumbs/86/50/mobile-banking-credit-card-payment-line-and-bold-vector-34338650.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-banking-credit-card-payment-line-and-bold-vector-34338650" title="mobile banking credit card payment line and bold vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/86/50/mobile-banking-credit-card-payment-line-and-bold-vector-34338650.jpg" title="mobile banking credit card payment line and bold" alt="mobile banking credit card payment line and bold vector image"></noscript></a></li>
+						<li data-id="25883833" data-title="new gray turquoise icon on a white background" data-src="https://cdn4.vectorstock.com/i/thumbs/38/33/new-gray-turquoise-icon-on-a-white-background-vector-25883833.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/new-gray-turquoise-icon-on-a-white-background-vector-25883833" title="new gray turquoise icon on a white background vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/38/33/new-gray-turquoise-icon-on-a-white-background-vector-25883833.jpg" title="new gray turquoise icon on a white background" alt="new gray turquoise icon on a white background vector image"></noscript></a></li>
+						<li data-id="21573965" data-title="flat line icon pack for designers and developers" data-src="https://cdn1.vectorstock.com/i/thumbs/39/65/flat-line-icon-pack-for-designers-and-developers-vector-21573965.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/flat-line-icon-pack-for-designers-and-developers-vector-21573965" title="flat line icon pack for designers and developers vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/39/65/flat-line-icon-pack-for-designers-and-developers-vector-21573965.jpg" title="flat line icon pack for designers and developers" alt="flat line icon pack for designers and developers vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-similar-to_29238513" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-artist" class="group">
+				<h6><span class="icon"></span><strong>More by <a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_woodhouse84" rel="nofollow">woodhouse84</a></strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/25/73/people-rejoice-at-exchange-rate-online-economy-vector-29252573.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/people-rejoice-at-exchange-rate-online-economy-vector-29252573" title="people rejoice at exchange rate online economy vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/25/73/people-rejoice-at-exchange-rate-online-economy-vector-29252573.jpg" title="people rejoice at exchange rate online economy" alt="people rejoice at exchange rate online economy vector image"></noscript></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/91/05/mobile-currency-exchange-online-banking-characters-vector-22769105.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-online-banking-characters-vector-22769105" title="mobile currency exchange online banking characters vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/91/05/mobile-currency-exchange-online-banking-characters-vector-22769105.jpg" title="mobile currency exchange online banking characters" alt="mobile currency exchange online banking characters vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/91/28/mobile-currency-exchange-online-banking-characters-vector-22769128.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-online-banking-characters-vector-22769128" title="mobile currency exchange online banking characters vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/91/28/mobile-currency-exchange-online-banking-characters-vector-22769128.jpg" title="mobile currency exchange online banking characters" alt="mobile currency exchange online banking characters vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/90/33/mobile-currency-exchange-online-banking-characters-vector-22769033.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-online-banking-characters-vector-22769033" title="mobile currency exchange online banking characters vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/90/33/mobile-currency-exchange-online-banking-characters-vector-22769033.jpg" title="mobile currency exchange online banking characters" alt="mobile currency exchange online banking characters vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/90/73/mobile-currency-exchange-online-banking-characters-vector-22769073.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-online-banking-characters-vector-22769073" title="mobile currency exchange online banking characters vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/90/73/mobile-currency-exchange-online-banking-characters-vector-22769073.jpg" title="mobile currency exchange online banking characters" alt="mobile currency exchange online banking characters vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/90/43/mobile-currency-exchange-online-banking-characters-vector-22769043.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-online-banking-characters-vector-22769043" title="mobile currency exchange online banking characters vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/90/43/mobile-currency-exchange-online-banking-characters-vector-22769043.jpg" title="mobile currency exchange online banking characters" alt="mobile currency exchange online banking characters vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/92/21/mobile-currency-exchange-online-banking-characters-vector-22769221.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-online-banking-characters-vector-22769221" title="mobile currency exchange online banking characters vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/92/21/mobile-currency-exchange-online-banking-characters-vector-22769221.jpg" title="mobile currency exchange online banking characters" alt="mobile currency exchange online banking characters vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/91/63/mobile-currency-exchange-online-banking-concept-vector-22769163.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-online-banking-concept-vector-22769163" title="mobile currency exchange online banking concept vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/91/63/mobile-currency-exchange-online-banking-concept-vector-22769163.jpg" title="mobile currency exchange online banking concept" alt="mobile currency exchange online banking concept vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/91/83/mobile-currency-exchange-service-online-banking-vector-22769183.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-service-online-banking-vector-22769183" title="mobile currency exchange service online banking vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/91/83/mobile-currency-exchange-service-online-banking-vector-22769183.jpg" title="mobile currency exchange service online banking" alt="mobile currency exchange service online banking vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/22/37/mobile-marketing-landing-page-template-banking-vector-22852237.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-marketing-landing-page-template-banking-vector-22852237" title="mobile marketing landing page template banking vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/22/37/mobile-marketing-landing-page-template-banking-vector-22852237.jpg" title="mobile marketing landing page template banking" alt="mobile marketing landing page template banking vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="29638852" data-title="swift society worldwide interbank financial" data-src="https://cdn3.vectorstock.com/i/thumbs/88/52/swift-society-worldwide-interbank-financial-vector-29638852.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/swift-society-worldwide-interbank-financial-vector-29638852" title="swift society worldwide interbank financial vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/88/52/swift-society-worldwide-interbank-financial-vector-29638852.jpg" title="swift society worldwide interbank financial" alt="swift society worldwide interbank financial vector image vector image"></noscript></a></li>
+						<li data-id="22852393" data-title="mobile marketing landing page template banking" data-src="https://cdn4.vectorstock.com/i/thumbs/23/93/mobile-marketing-landing-page-template-banking-vector-22852393.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-marketing-landing-page-template-banking-vector-22852393" title="mobile marketing landing page template banking vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/23/93/mobile-marketing-landing-page-template-banking-vector-22852393.jpg" title="mobile marketing landing page template banking" alt="mobile marketing landing page template banking vector image vector image"></noscript></a></li>
+						<li data-id="31298145" data-title="female character enjoy finance success saving" data-src="https://cdn1.vectorstock.com/i/thumbs/81/45/female-character-enjoy-finance-success-saving-vector-31298145.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/female-character-enjoy-finance-success-saving-vector-31298145" title="female character enjoy finance success saving vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/81/45/female-character-enjoy-finance-success-saving-vector-31298145.jpg" title="female character enjoy finance success saving" alt="female character enjoy finance success saving vector image vector image"></noscript></a></li>
+						<li data-id="28030718" data-title="tiny woman sitting huge purse full cash and" data-src="https://cdn4.vectorstock.com/i/thumbs/07/18/tiny-woman-sitting-huge-purse-full-cash-and-vector-28030718.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/tiny-woman-sitting-huge-purse-full-cash-and-vector-28030718" title="tiny woman sitting huge purse full cash and vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/07/18/tiny-woman-sitting-huge-purse-full-cash-and-vector-28030718.jpg" title="tiny woman sitting huge purse full cash and" alt="tiny woman sitting huge purse full cash and vector image vector image"></noscript></a></li>
+						<li data-id="28131263" data-title="people and money website landing page tiny woman" data-src="https://cdn4.vectorstock.com/i/thumbs/12/63/people-and-money-website-landing-page-tiny-woman-vector-28131263.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/people-and-money-website-landing-page-tiny-woman-vector-28131263" title="people and money website landing page tiny woman vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/12/63/people-and-money-website-landing-page-tiny-woman-vector-28131263.jpg" title="people and money website landing page tiny woman" alt="people and money website landing page tiny woman vector image vector image"></noscript></a></li>
+						<li data-id="22769118" data-title="online banking concept woman transferring money" data-src="https://cdn4.vectorstock.com/i/thumbs/91/18/online-banking-concept-woman-transferring-money-vector-22769118.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/online-banking-concept-woman-transferring-money-vector-22769118" title="online banking concept woman transferring money vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/91/18/online-banking-concept-woman-transferring-money-vector-22769118.jpg" title="online banking concept woman transferring money" alt="online banking concept woman transferring money vector image vector image"></noscript></a></li>
+						<li data-id="30415580" data-title="noncontact payment with credit card reader machine" data-src="https://cdn1.vectorstock.com/i/thumbs/55/80/noncontact-payment-with-credit-card-reader-machine-vector-30415580.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/noncontact-payment-with-credit-card-reader-machine-vector-30415580" title="noncontact payment with credit card reader machine vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/55/80/noncontact-payment-with-credit-card-reader-machine-vector-30415580.jpg" title="noncontact payment with credit card reader machine" alt="noncontact payment with credit card reader machine vector image vector image"></noscript></a></li>
+						<li data-id="22852225" data-title="mobile currency exchange landing page template" data-src="https://cdn1.vectorstock.com/i/thumbs/22/25/mobile-currency-exchange-landing-page-template-vector-22852225.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-landing-page-template-vector-22852225" title="mobile currency exchange landing page template vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/22/25/mobile-currency-exchange-landing-page-template-vector-22852225.jpg" title="mobile currency exchange landing page template" alt="mobile currency exchange landing page template vector image vector image"></noscript></a></li>
+						<li data-id="22769216" data-title="mobile marketing landing page online banking" data-src="https://cdn2.vectorstock.com/i/thumbs/92/16/mobile-marketing-landing-page-online-banking-vector-22769216.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-marketing-landing-page-online-banking-vector-22769216" title="mobile marketing landing page online banking vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/92/16/mobile-marketing-landing-page-online-banking-vector-22769216.jpg" title="mobile marketing landing page online banking" alt="mobile marketing landing page online banking vector image vector image"></noscript></a></li>
+						<li data-id="22769062" data-title="mobile currency exchange landing page template" data-src="https://cdn3.vectorstock.com/i/thumbs/90/62/mobile-currency-exchange-landing-page-template-vector-22769062.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-landing-page-template-vector-22769062" title="mobile currency exchange landing page template vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/90/62/mobile-currency-exchange-landing-page-template-vector-22769062.jpg" title="mobile currency exchange landing page template" alt="mobile currency exchange landing page template vector image vector image"></noscript></a></li>
+						<li data-id="22769218" data-title="mobile currency exchange landing page template" data-src="https://cdn4.vectorstock.com/i/thumbs/92/18/mobile-currency-exchange-landing-page-template-vector-22769218.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-landing-page-template-vector-22769218" title="mobile currency exchange landing page template vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/92/18/mobile-currency-exchange-landing-page-template-vector-22769218.jpg" title="mobile currency exchange landing page template" alt="mobile currency exchange landing page template vector image vector image"></noscript></a></li>
+						<li data-id="22769047" data-title="mobile currency exchange landing page template" data-src="https://cdn3.vectorstock.com/i/thumbs/90/47/mobile-currency-exchange-landing-page-template-vector-22769047.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-landing-page-template-vector-22769047" title="mobile currency exchange landing page template vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/90/47/mobile-currency-exchange-landing-page-template-vector-22769047.jpg" title="mobile currency exchange landing page template" alt="mobile currency exchange landing page template vector image vector image"></noscript></a></li>
+						<li data-id="30322203" data-title="noncontact payment with credit card reader machine" data-src="https://cdn4.vectorstock.com/i/thumbs/22/03/noncontact-payment-with-credit-card-reader-machine-vector-30322203.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/noncontact-payment-with-credit-card-reader-machine-vector-30322203" title="noncontact payment with credit card reader machine vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/22/03/noncontact-payment-with-credit-card-reader-machine-vector-30322203.jpg" title="noncontact payment with credit card reader machine" alt="noncontact payment with credit card reader machine vector image vector image"></noscript></a></li>
+						<li data-id="22852251" data-title="mobile banking landing page template online" data-src="https://cdn2.vectorstock.com/i/thumbs/22/51/mobile-banking-landing-page-template-online-vector-22852251.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-banking-landing-page-template-online-vector-22852251" title="mobile banking landing page template online vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/22/51/mobile-banking-landing-page-template-online-vector-22852251.jpg" title="mobile banking landing page template online" alt="mobile banking landing page template online vector image vector image"></noscript></a></li>
+						<li data-id="22852241" data-title="mobile currency exchange landing page template" data-src="https://cdn2.vectorstock.com/i/thumbs/22/41/mobile-currency-exchange-landing-page-template-vector-22852241.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-currency-exchange-landing-page-template-vector-22852241" title="mobile currency exchange landing page template vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/22/41/mobile-currency-exchange-landing-page-template-vector-22852241.jpg" title="mobile currency exchange landing page template" alt="mobile currency exchange landing page template vector image vector image"></noscript></a></li>
+						<li data-id="29238502" data-title="currency exchange concept woman giving one euro" data-src="https://cdn3.vectorstock.com/i/thumbs/85/02/currency-exchange-concept-woman-giving-one-euro-vector-29238502.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/currency-exchange-concept-woman-giving-one-euro-vector-29238502" title="currency exchange concept woman giving one euro vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/85/02/currency-exchange-concept-woman-giving-one-euro-vector-29238502.jpg" title="currency exchange concept woman giving one euro" alt="currency exchange concept woman giving one euro vector image vector image"></noscript></a></li>
+						<li data-id="30416187" data-title="characters online noncontact payment landing page" data-src="https://cdn3.vectorstock.com/i/thumbs/61/87/characters-online-noncontact-payment-landing-page-vector-30416187.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/characters-online-noncontact-payment-landing-page-vector-30416187" title="characters online noncontact payment landing page vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/61/87/characters-online-noncontact-payment-landing-page-vector-30416187.jpg" title="characters online noncontact payment landing page" alt="characters online noncontact payment landing page vector image vector image"></noscript></a></li>
+						<li data-id="29252553" data-title="set people changing currency isolated on white" data-src="https://cdn4.vectorstock.com/i/thumbs/25/53/set-people-changing-currency-isolated-on-white-vector-29252553.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-people-changing-currency-isolated-on-white-vector-29252553" title="set people changing currency isolated on white vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/25/53/set-people-changing-currency-isolated-on-white-vector-29252553.jpg" title="set people changing currency isolated on white" alt="set people changing currency isolated on white vector image vector image"></noscript></a></li>
+						<li data-id="31387105" data-title="european and american currency opposition landing" data-src="https://cdn1.vectorstock.com/i/thumbs/71/05/european-and-american-currency-opposition-landing-vector-31387105.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/european-and-american-currency-opposition-landing-vector-31387105" title="european and american currency opposition landing vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/71/05/european-and-american-currency-opposition-landing-vector-31387105.jpg" title="european and american currency opposition landing" alt="european and american currency opposition landing vector image vector image"></noscript></a></li>
+						<li data-id="31197726" data-title="set people and money isolated on white" data-src="https://cdn2.vectorstock.com/i/thumbs/77/26/set-people-and-money-isolated-on-white-vector-31197726.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-people-and-money-isolated-on-white-vector-31197726" title="set people and money isolated on white vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/77/26/set-people-and-money-isolated-on-white-vector-31197726.jpg" title="set people and money isolated on white" alt="set people and money isolated on white vector image vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_woodhouse84" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-keywords" class="group">
+				<h6><span class="icon"></span><strong>Related Searches</strong></h6>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/money-vectors">Money</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/transfer-vectors">Transfer</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/currency-vectors">Currency</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/working-vectors">Working</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/foreign-vectors">Foreign</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/payroll-vectors">Payroll</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/girl-vectors">Girl</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/woman-vectors">Woman</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/credit-vectors">Credit</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/card-vectors">Card</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/global-vectors">Global</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/service-vectors">Service</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/laptop-vectors">Laptop</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/exchange-vectors">Exchange</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/chair-vectors">Chair</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/sitting-vectors">Sitting</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/illustration-vectors">Illustration</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/young-vectors">Young</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/account-vectors">Account</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/dollar-vectors">Dollar</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/vector-vectors">Vector</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/flat-vectors">Flat</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/person-vectors">Person</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/people-vectors">People</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/digital-vectors">Digital</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/online-vectors">Online</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/sack-vectors">Sack</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/cartoon-vectors">Cartoon</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/wealth-vectors">Wealth</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/human-vectors">Human</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/technology-vectors">Technology</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/character-vectors">Character</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/growth-vectors">Growth</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/quick-vectors">Quick</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/network-vectors">Network</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/app-vectors">App</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/favorable-vectors">Favorable</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/convenient-vectors">Convenient</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/salary-vectors">Salary</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/bank-vectors">Bank</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/world-vectors">World</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/concept-vectors">Concept</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/wallet-vectors">Wallet</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/economic-vectors">Economic</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/marketing-vectors">Marketing</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/trade-vectors">Trade</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/pay-vectors">Pay</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/background-vectors">Background</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/buy-vectors">Buy</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/entrepreneur-vectors">Entrepreneur</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+
+		<div>
+		<div class="column c1">
+			<nav class="company">
+				<h4>VectorStock</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/" title="Home">Home</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/free-vectors" title="Free Vectors">Free Vectors</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/royalty-free-vectors" title="All Royalty-Free Vectors">All Vectors</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://www.vectorstock.com/what-is-a-vector" title="What is a Vector?">What is a Vector?</a></li>
+				</ul>
+				<ul>
+					<li class="sel"><a href="https://www.vectorstock.com/faq" title="Frequently Asked Questions"><span class="long">Frequently Asked Questions</span><span class="short">FAQs</span></a></li>
+					<li><a href="https://www.vectorstock.com/faq/members/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/contact" title="Contact Us">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="column c2">
+			<nav class="account">
+					<h4><span class="title">Account</span><span class="icon"></span></h4>
+					<ul>
+						<li><a href="https://www.vectorstock.com/signup" title="Join Now">Join Now</a></li>
+						<li><a href="https://www.vectorstock.com/pricing" title="Pricing">Pricing</a></li>
+						<li><a href="https://www.vectorstock.com/?signup=1&amp;contributor=1" title="Contributor Sign Up">Contributor Sign Up</a></li>
+						<li><a href="https://www.vectorstock.com/faq/artists/why-sell-at-vectorstock" title="Contributor FAQ">Contributor FAQ</a></li>
+					</ul>
+			</nav>
+		</div>
+		<div class="column c3">
+			<nav class="social">
+				<h4>Social</h4>
+				<ul>
+					<li class="facebook sel"><a href="https://www.facebook.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Facebook</span><span class="icon"></span></a></li>
+					<li class="pinterest sel"><a href="https://pinterest.com/vectorstock/" target="_blank" rel="noreferrer"><span class="title">Pinterest</span><span class="icon"></span></a></li>
+					<li class="twitter sel"><a href="https://twitter.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Twitter</span><span class="icon"></span></a></li>
+				</ul>
+			</nav>
+			<div class="signoff">
+				<h5><a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a></h5>
+				<p>VectorStock and the VectorStock logo are registered trademarks of VectorStock Media.<br>
+				© 2021. <span>All Rights Reserved.</span></p>
+			</div>
+		</div>
+	</div></footer>
+
+
+	<script type="text/javascript" nonce="dRIoTx/p8vA34ypf5sd0vfFt3lB4//zCnpvv3WIwdng=">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"02e09611df","applicationID":"156179534","transactionName":"ZV0ENRYCC0RYAkVbDVwXJRQXFwpaFhNeSwNeTB9MAhEAUhQXVFEWXUpJFw0GEg==","queueTime":0,"applicationTime":44,"atts":"SRoHQ14YGEo=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+
+
+
+</body></html>

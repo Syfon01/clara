@@ -938,3 +938,47 @@ img, svg {
   font-weight: 700;
   font-size: 1.2rem;
 }
+.social-buttons .btn-facebook{
+  background: #3b5998;
+}
+.social-buttons a {
+  color: #fff;
+}
+.social-buttons .btn-twitter {
+  background: #00aced;
+}
+.social-buttons .btn-instagram {
+  background:rgb(193, 53, 132);
+}
+.btn-block{
+  width: 100%;
+}
+.loginOr {
+  position: relative;
+  font-size: 1.3em;
+  color: #aaa;
+  margin: 20px 20px;
+  /* padding-top: 0px; */
+  /* padding-bottom: 1em; */
+}
+
+.spanOr:before {
+  content: "";
+  border: 1px solid #aaa;
+  position: absolute;
+  width: 50%;
+  top: 17px;
+  left: -20px;
+}
+
+.spanOr:after {
+  content: "";
+  border: 1px solid #aaa;
+  width: 50%;
+  position: absolute;
+  top: 17px;
+  right: -20px;
+}
+.tx-left{
+  text-align: left;
+}

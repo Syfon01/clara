@@ -1110,3 +1110,7 @@ textarea:focus, input:focus{
 .divider {
   border-bottom: 1px solid #f2f5f7;
 }
+.btnn{
+  border: 2px solid transparent;
+  border-radius: 0;
+}

@@ -444,11 +444,13 @@
  
 });
 
-// $(".dropdown-menu li a").click(function(){
-//  const show = $(this).parents(".btn-group").find('.btn').html($(this).text() + ' <span i class="currency-flag"><i></span>');
-//   console.log(show)
-//   const sec = $(this).parents(".btn-group").find('.btn').val($(this).data('value'));
-// });
+(".dropdown-menu li a").click(function(){
+  const textEl = $(this).text().substring(0,3);
+  const flagCur = $(this).find('.currency-flag')[0].classList[1];
+  const showFlag = '<i class="currency-flag rounded me-1 ' + flagCur +'  "></i>'
+ const show = $(this).parents(".btn-group").find('.btn').html(showFlag + textEl);
+  const sec = $(this).parents(".btn-group").find('.btn').val($(this).data('value'));
+});
 
 
 function filterFunction() {

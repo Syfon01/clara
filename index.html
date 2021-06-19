@@ -67,7 +67,7 @@
                       <input type="text" id="" value="1000" class="form-control" placeholder="" autocomplete="off">
                       <div class="input-group-btn amount-currency-select-btn">
                         <div class="btn-group btn-block dropdown">
-                          <button class="btn btn-input btn-input-inverse btn-addon btn-lg dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown"><span><i class="currency-flag me-1 currency-flag-gbp hidden-xs rounded me-1"></i>GBP</span></button>
+                          <button id="country-drop" class="btn btn-input btn-input-inverse btn-addon btn-lg dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown"><span><i id="flag" class="currency-flag currency-flag-gbp me-1hidden-xs rounded me-1"></i>GBP</span></button>
                             <ul id="myDropdown" class="dropdown-menu dropdown-menu-xs-right dropdown-menu-lg dropdown-menu--open dropdown-content">
                               <div class="divider">
                                 <div class="input-group"><span class="input-group-addon">
@@ -81,68 +81,68 @@
                               </div>
                               <li class="dropdown-header">Popular currencies</li>
                             <li class="">
-                                  <a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-eur "></i>EUR<span class="small ms-3">Euro</span></span></a>
+                                  <a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-eur me-1"></i>EUR<span class="small ms-3">Euro</span></span></a>
                             </li>
                             <li class=" active">
-                              <a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-gbp "></i>GBP<span class="small ms-3">British pound</span></span> </a>
+                              <a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-gbp me-1"></i>GBP<span class="small ms-3">British pound</span></span> </a>
                             </li>
                             <li class="">
-                                <a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-inr "></i>INR<span class="small ms-3">Indian rupee</span></span> </a>
+                                <a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-inr me-1"></i>INR<span class="small ms-3">Indian rupee</span></span> </a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-usd "></i>USD<span class="small ms-3">United States dollar</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-usd me-1"></i>USD<span class="small ms-3">United States dollar</span></span></a>
                             </li>
-                            <li class="dropdown-header">All currencies</li><li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-aed "></i>AED<span class="small ms-3">United Arab Emirates dirham</span></span></a>
+                            <li class="dropdown-header">All currencies</li><li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-aed me-1"></i>AED<span class="small ms-3">United Arab Emirates dirham</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-aud "></i>AUD<span class="small ms-3">Australian dollar</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-aud me-1"></i>AUD<span class="small ms-3">Australian dollar</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-bgn "></i>BGN<span class="small ms-3">Bulgarian lev</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-bgn me-1"></i>BGN<span class="small ms-3">Bulgarian lev</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-brl "></i>BRL<span class="small ms-3">Brazilian real</span></span></a></li><li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-cad "></i>CAD<span class="small ms-3">Canadian dollar</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-brl me-1"></i>BRL<span class="small ms-3">Brazilian real</span></span></a></li><li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-cad me-1"></i>CAD<span class="small ms-3">Canadian dollar</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-cad "></i>CAD<span class="small ms-3">Canadian dollar</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-cad me-1"></i>CAD<span class="small ms-3">Canadian dollar</span></span></a>
                             </li>
                             
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-chf "></i>CHF<span class="small ms-3">Swiss franc</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-chf me-1"></i>CHF<span class="small ms-3">Swiss franc</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-czk "></i>CZK<span class="small ms-3">Czech koruna</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-czk me-1"></i>CZK<span class="small ms-3">Czech koruna</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-dkk "></i>DKK<span class="small ms-3">Danish krone</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-dkk me-1"></i>DKK<span class="small ms-3">Danish krone</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-eur "></i>EUR<span class="small ms-3">Euro</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-eur me-1"></i>EUR<span class="small ms-3">Euro</span></span></a>
                             </li>
-                            <li class=" active"><a><span><i class="currency-flag me-1 currency-flag-gbp "></i>GBP<span class="small ms-3">British pound</span></span></a>
+                            <li class=" active"><a><span><i id="flag" class="currency-flag currency-flag-gbp me-1"></i>GBP<span class="small ms-3">British pound</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-hkd "></i>HKD<span class="small ms-3">Hong Kong dollar</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-hkd me-1"></i>HKD<span class="small ms-3">Hong Kong dollar</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-hrk "></i>HRK<span class="small ms-3">Croatian kuna</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-hrk me-1"></i>HRK<span class="small ms-3">Croatian kuna</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-huf "></i>HUF<span class="small ms-3">Hungarian forint</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-huf me-1"></i>HUF<span class="small ms-3">Hungarian forint</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-idr "></i>IDR<span class="small ms-3">Indonesian rupiah</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-idr me-1"></i>IDR<span class="small ms-3">Indonesian rupiah</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-inr "></i>INR<span class="small ms-3">Indian rupee</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-inr me-1"></i>INR<span class="small ms-3">Indian rupee</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-jpy "></i>JPY<span class="small ms-3">Japanese yen</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-jpy me-1"></i>JPY<span class="small ms-3">Japanese yen</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-myr "></i>MYR<span class="small ms-3">Malaysian ringgit</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-myr me-1"></i>MYR<span class="small ms-3">Malaysian ringgit</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-npr "></i>NPR<span class="small ms-3">Nepalese rupee</span></span></a></li>
-                            <li><a><span><i class="currency-flag me-1 currency-flag-ngn "></i>NGN<span class="small ms-3">Nigerian naira</span></span></a></li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-nok "></i>NOK<span class="small ms-3">Norwegian krone</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-npr me-1"></i>NPR<span class="small ms-3">Nepalese rupee</span></span></a></li>
+                            <li><a><span><i id="flag" class="currency-flag currency-flag-ngn me-1"></i>NGN<span class="small ms-3">Nigerian naira</span></span></a></li>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-nok me-1"></i>NOK<span class="small ms-3">Norwegian krone</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-nzd "></i>NZD<span class="small ms-3">New Zealand dollar</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-nzd me-1"></i>NZD<span class="small ms-3">New Zealand dollar</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-pln "></i>PLN<span class="small ms-3">Polish złoty</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-pln me-1"></i>PLN<span class="small ms-3">Polish złoty</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-ron "></i>RON<span class="small ms-3">Romanian leu</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-ron me-1"></i>RON<span class="small ms-3">Romanian leu</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-sek "></i>SEK<span class="small ms-3">Swedish krona</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-sek me-1"></i>SEK<span class="small ms-3">Swedish krona</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-sgd "></i>SGD<span class="small ms-3">Singapore dollar</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-sgd me-1"></i>SGD<span class="small ms-3">Singapore dollar</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-try "></i>TRY<span class="small ms-3">Turkish lira</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-try me-1"></i>TRY<span class="small ms-3">Turkish lira</span></span></a>
                             </li>
-                            <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-usd "></i>USD<span class="small ms-3">United States dollar</span></span></a>
+                            <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-usd me-1"></i>USD<span class="small ms-3">United States dollar</span></span></a>
                             </li>
                             <li class=""><a class="dropdown-item"><span>Can't find it? <span class="anchor">Request the currency you need</span>, and we'll notify you once it's available.</span></a>
                             </li>
@@ -157,8 +157,8 @@
                       <input type="text" id="time" value="780000" class="form-control" placeholder="" autocomplete="off">
                       <div class="input-group-btn amount-currency-select-btn">
                         <div class="btn-group btn-block dropdown">
-                          <button class="btn btn-input btn-input-inverse btn-addon btn-lg dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown"><span><i class="currency-flag me-1 currency-flag-ngn hidden-xs rounded me-1"></i>NGN</span></button>
-                          <ul id="myDropdown" class="dropdown-menu dropdown-menu-xs-right dropdown-menu-lg dropdown-menu--open dropdown-content">
+                          <button class="btn btn-input btn-input-inverse btn-addon btn-lg dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown"><span><i id="flag" class="currency-flag currency-flag-ngn me-1hidden-xs rounded me-1"></i>NGN</span></button>
+                          <ul id="" class="dropdown-menu dropdown-menu-xs-right dropdown-menu-lg dropdown-menu--open dropdown-content">
                             <div class="divider">
                               <div class="input-group"><span class="input-group-addon">
                                 <span class="tw-icon tw-icon-search tw-icon tw-icon-search" aria-hidden="true" role="presentation">
@@ -171,68 +171,68 @@
                             </div>
                             <li class="dropdown-header">Popular currencies</li>
                           <li class="">
-                                <a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-eur "></i>EUR<span class="small ms-3">Euro</span></span></a>
+                                <a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-eur me-1"></i>EUR<span class="small ms-3">Euro</span></span></a>
                           </li>
                           <li class=" active">
-                            <a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-gbp "></i>GBP<span class="small ms-3">British pound</span></span> </a>
+                            <a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-gbp me-1"></i>GBP<span class="small ms-3">British pound</span></span> </a>
                           </li>
                           <li class="">
-                              <a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-inr "></i>INR<span class="small ms-3">Indian rupee</span></span> </a>
+                              <a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-inr me-1"></i>INR<span class="small ms-3">Indian rupee</span></span> </a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-usd "></i>USD<span class="small ms-3">United States dollar</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-usd me-1"></i>USD<span class="small ms-3">United States dollar</span></span></a>
                           </li>
-                          <li class="dropdown-header">All currencies</li><li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-aed "></i>AED<span class="small ms-3">United Arab Emirates dirham</span></span></a>
+                          <li class="dropdown-header">All currencies</li><li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-aed me-1"></i>AED<span class="small ms-3">United Arab Emirates dirham</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-aud "></i>AUD<span class="small ms-3">Australian dollar</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-aud me-1"></i>AUD<span class="small ms-3">Australian dollar</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-bgn "></i>BGN<span class="small ms-3">Bulgarian lev</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-bgn me-1"></i>BGN<span class="small ms-3">Bulgarian lev</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-brl "></i>BRL<span class="small ms-3">Brazilian real</span></span></a></li><li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-cad "></i>CAD<span class="small ms-3">Canadian dollar</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-brl me-1"></i>BRL<span class="small ms-3">Brazilian real</span></span></a></li><li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-cad me-1"></i>CAD<span class="small ms-3">Canadian dollar</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-cad "></i>CAD<span class="small ms-3">Canadian dollar</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-cad me-1"></i>CAD<span class="small ms-3">Canadian dollar</span></span></a>
                           </li>
                           
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-chf "></i>CHF<span class="small ms-3">Swiss franc</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-chf me-1"></i>CHF<span class="small ms-3">Swiss franc</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-czk "></i>CZK<span class="small ms-3">Czech koruna</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-czk me-1"></i>CZK<span class="small ms-3">Czech koruna</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-dkk "></i>DKK<span class="small ms-3">Danish krone</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-dkk me-1"></i>DKK<span class="small ms-3">Danish krone</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-eur "></i>EUR<span class="small ms-3">Euro</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-eur me-1"></i>EUR<span class="small ms-3">Euro</span></span></a>
                           </li>
-                          <li class=" active"><a><span><i class="currency-flag me-1 currency-flag-gbp "></i>GBP<span class="small ms-3">British pound</span></span></a>
+                          <li class=" active"><a><span><i id="flag" class="currency-flag currency-flag-gbp me-1"></i>GBP<span class="small ms-3">British pound</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-hkd "></i>HKD<span class="small ms-3">Hong Kong dollar</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-hkd me-1"></i>HKD<span class="small ms-3">Hong Kong dollar</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-hrk "></i>HRK<span class="small ms-3">Croatian kuna</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-hrk me-1"></i>HRK<span class="small ms-3">Croatian kuna</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-huf "></i>HUF<span class="small ms-3">Hungarian forint</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-huf me-1"></i>HUF<span class="small ms-3">Hungarian forint</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-idr "></i>IDR<span class="small ms-3">Indonesian rupiah</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-idr me-1"></i>IDR<span class="small ms-3">Indonesian rupiah</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-inr "></i>INR<span class="small ms-3">Indian rupee</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-inr me-1"></i>INR<span class="small ms-3">Indian rupee</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-jpy "></i>JPY<span class="small ms-3">Japanese yen</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-jpy me-1"></i>JPY<span class="small ms-3">Japanese yen</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-myr "></i>MYR<span class="small ms-3">Malaysian ringgit</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-myr me-1"></i>MYR<span class="small ms-3">Malaysian ringgit</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-npr "></i>NPR<span class="small ms-3">Nepalese rupee</span></span></a></li>
-                          <li class=" active"><a><span><i class="currency-flag me-1 currency-flag-ngn "></i>NGN<span class="small ms-3">Nigerian naira</span></span></a></li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-nok "></i>NOK<span class="small ms-3">Norwegian krone</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-npr me-1"></i>NPR<span class="small ms-3">Nepalese rupee</span></span></a></li>
+                          <li class=" active"><a><span><i id="flag" class="currency-flag currency-flag-ngn me-1"></i>NGN<span class="small ms-3">Nigerian naira</span></span></a></li>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-nok me-1"></i>NOK<span class="small ms-3">Norwegian krone</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-nzd "></i>NZD<span class="small ms-3">New Zealand dollar</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-nzd me-1"></i>NZD<span class="small ms-3">New Zealand dollar</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-pln "></i>PLN<span class="small ms-3">Polish złoty</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-pln me-1"></i>PLN<span class="small ms-3">Polish złoty</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-ron "></i>RON<span class="small ms-3">Romanian leu</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-ron me-1"></i>RON<span class="small ms-3">Romanian leu</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-sek "></i>SEK<span class="small ms-3">Swedish krona</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-sek me-1"></i>SEK<span class="small ms-3">Swedish krona</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-sgd "></i>SGD<span class="small ms-3">Singapore dollar</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-sgd me-1"></i>SGD<span class="small ms-3">Singapore dollar</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-try "></i>TRY<span class="small ms-3">Turkish lira</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-try me-1"></i>TRY<span class="small ms-3">Turkish lira</span></span></a>
                           </li>
-                          <li class=""><a class="dropdown-item"><span><i class="currency-flag me-1 currency-flag-usd "></i>USD<span class="small ms-3">United States dollar</span></span></a>
+                          <li class=""><a class="dropdown-item"><span><i id="flag" class="currency-flag currency-flag-usd me-1"></i>USD<span class="small ms-3">United States dollar</span></span></a>
                           </li>
                           <li class=""><a class="dropdown-item"><span>Can't find it? <span class="anchor">Request the currency you need</span>, and we'll notify you once it's available.</span></a>
                           </li>
@@ -260,6 +260,9 @@
                   </div>
 
                 </form>
+
+         
+
                 
               </div>
             </div>
@@ -718,9 +721,12 @@
  
 });
 
+
 $(".dropdown-menu li a").click(function(){
- const show = $(this).parents(".btn-group").find('.btn').html($(this).text() + ' <span i class="currency-flag"><i></span>');
-  console.log(show)
+  const textEl = $(this).text().substring(0,3);
+  const flagCur = $(this).find('.currency-flag')[0].classList[1];
+  const showFlag = '<i class="currency-flag rounded me-1 ' + flagCur +'  "></i>'
+ const show = $(this).parents(".btn-group").find('.btn').html(showFlag + textEl);
   const sec = $(this).parents(".btn-group").find('.btn').val($(this).data('value'));
 });
 

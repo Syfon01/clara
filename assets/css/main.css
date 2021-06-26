@@ -1114,3 +1114,11 @@ textarea:focus, input:focus{
   border: 2px solid transparent;
   border-radius: 0;
 }
+.select-width{
+  width: 300px!important;
+}
+
+.select-hover:hover{
+  background:rgba(254,150,0,0.6)!important;
+  color: #fff!important;
+}

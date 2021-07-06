@@ -353,7 +353,7 @@ img, svg {
     font-size: 42px;
   }
   .mob-pad{
-    padding: 0px 15px!important;
+    padding: 5px 15px!important;
   }
   .row{
     overflow-x: hidden!important;
@@ -424,7 +424,12 @@ img, svg {
     margin-top: -5px;
     
   }
-  
+  .desk-pad{
+    padding-top: 10px!important;
+  }
+  h1.tx-36{
+    font-size: 2rem!important;
+  }
  }
 
  /* login  */
@@ -1121,4 +1126,14 @@ textarea:focus, input:focus{
 .select-hover:hover{
   background:rgba(254,150,0,0.6)!important;
   color: #fff!important;
+}
+#bank, .hide-div{
+  display: none;
+}
+
+.dropdown-toggle.btn-blog::after{
+  margin-left: auto!important;
+}
+.desk-pad{
+  padding-top: 150px;
 }

@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" href="./index.html" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./about.html">About Us</a>
@@ -44,11 +44,11 @@
         </div>
       </div>
     </nav>
-    <section class="header py-5" id="">
+    <section class="header py-3" id="">
       <div class="container pt-5">
         <div class="row justify-content-between py-5 mob-pad">
-          <div class="col-md-6 col-12 py-3 pt-md-5 mob-pad">
-            <h1 class="tx-36 fw-bolder mb-5">Use our Bank Transfer service to send money securely to Nigeria.</h1>
+          <div class="col-md-6 col-12 pb-3 mob-pad desk-pad">
+            <h1 class="tx-36 fw-bolder mt-lg-5">Use our Bank Transfer service to send money securely to Nigeria.</h1>
 
           </div>
           <div class="col-md-5 col-12">
@@ -244,20 +244,118 @@
                     <div class="col-md-5">
                       <p class="text-dark pt-2">Delivery Method</p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
                       <div class="btn-group d-flex float-md-right border px-2">
-                        <a class="btn btn-default dropdown-toggle btn-blog " data-bs-toggle="dropdown" id="dropdownMenu1"><span class="selection pull-left">Cash Pickup </span> 
+                        <a class="btn btn-default dropdown-toggle btn-blog " data-bs-toggle="dropdown" id="dropdownMenu1"><span class="selection pull-left fw-bold">Cash Pickup </span> 
                           <span class="pull-right glyphiconglyphicon-chevron-down caret" style="float:right;margin-top:10px;"></span></a>
                     
                          <ul class="dropdown-menu select-width" id="dropdownOption" role="menu" aria-labelledby="dropdownMenu1">
-                           <li><a href="#" class="select-hover" data-value=1><h5>Cash Pick</h5> <p><span>Send Money for cash pickup</span> <br/><br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, minus?</p></a>  </li>
-                           <li><a href="#" class="select-hover" data-value=1><h5>Bank Transfer</h5> <p> <span>Send Money directly to bank</span>  <br/><br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, minus?</p></a>  </li>
+                           <li><a href="#" onclick="selectMethod(1)" class="select-hover" data-value=1><h5>Cash Pickup</h5> <p><span>Send Money for cash pickup</span> <br/><br/>We can help you pick up your money from any bank branch</p></a>  </li>
+                           <li><a href="#" onclick="selectMethod(2)" class="select-hover" data-value=2><h5>Bank Transfer</h5> <p> <span>Send Money directly to bank</span>  <br/><br/> Convenient transfer money to to any bank of choice</p></a>  </li>
                         </ul>
                       </div>
                     </div>
                   </div>
+                  <div id="show_1">
+                    <div class="row justify-content-between mt-2 ">
+                      <div class="col-md-5">
+                        <p class="text-dark pt-2">Cash Pickup partner</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="btn-group d-flex float-md-right border px-2">
+                          <a class="btn btn-default dropdown-toggle btn-blog " data-bs-toggle="dropdown" id="dropdownMenu1"><span class="selection pull-left fw-bold">Cash Pickup </span> 
+                            <span class="pull-right glyphiconglyphicon-chevron-down caret" style="float:right;margin-top:10px;"></span></a>
+                      
+                           <ul class="dropdown-menu select-width" id="dropdownOption1" role="menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#" onclick="feeDetails(1)" class="select-hover tx-primary" data-value=1> <h5>Any Access Branch</h5></a>  </li>
+                            <li><a href="#" onclick="feeDetails(1)" class="select-hover tx-primary" data-value=2><h5>Any  GTB Branch</h5></a>  </li>
+                            <li><a href="#" onclick="feeDetails(1)" class="select-hover tx-primary" data-value=3><h5>Any UBA Branch</h5></a>  </li>
+                            <li><a href="#" onclick="feeDetails(1)" class="select-hover tx-primary" data-value=4><h5>Any Firstbank Branch</h5></a>  </li>
+                            <li><a href="#" onclick="feeDetails(1)" class="select-hover tx-primary" data-value=5><h5>Any Union Branch</h5></a>  </li>
+                            <li><a href="#" onclick="feeDetails(1)" class="select-hover tx-primary" data-value=6><h5>Any Polaris Branch</h5></a>  </li>
+
+                             <li><a href="#" onclick="feeDetails(1)"  class="select-hover" data-value=1><h5>Pickup from any</h5> <p class="fw-bold"><span></span> <br/>GTB, Fidelity, Access, Zenith, Firstbank, Union, Polaris and UBA Branches</p></a>  </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div id="show_2" class="hide-div">
+                    <div class="row justify-content-between mt-2">
+                      <div class="col-md-5">
+                        <p class="text-dark pt-2">Bank Partner Transfer</p>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="btn-group d-flex float-md-right border px-2">
+                          <a class="btn btn-default dropdown-toggle btn-blog " data-bs-toggle="dropdown" id="dropdownMenu1"><span class="selection pull-left fw-bold">Select Partner</span> 
+                            <span class="pull-right glyphiconglyphicon-chevron-down caret" style="float:right;margin-top:10px;"></span></a>
+                      
+                           <ul class="dropdown-menu select-width" id="dropdownOption2" role="menu" aria-labelledby="dropdownMenu1">
+                             <li><a href="#" onclick="feeDetails(2)" class="select-hover tx-primary" data-value=1> <h5>Transfer to Access Account</h5></a>  </li>
+                             <li><a href="#" onclick="feeDetails(2)" class="select-hover tx-primary" data-value=2><h5>Transfer to GTB</h5></a>  </li>
+                             <li><a href="#" onclick="feeDetails(2)" class="select-hover tx-primary" data-value=3><h5>Transfer to UBA Account</h5></a>  </li>
+                             <li><a href="#" onclick="feeDetails(2)" class="select-hover tx-primary" data-value=4><h5>Transfer to Firstbank Account</h5></a>  </li>
+                             <li><a href="#" onclick="feeDetails(2)" class="select-hover tx-primary" data-value=5><h5>Transfer to Union Account</h5></a>  </li>
+                             <li><a href="#" onclick="feeDetails(2)" class="select-hover tx-primary" data-value=6><h5>Transfer to Polaris Account</h5></a>  </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="fee_1">
+                    <div class="row justify-content-between mt-3 ">
+                      <div class="col-md-5 col-5">
+                       <p class="mb-0 text-dark">Fee</p>
+                      </div>
+                      <div class="col-md-6 col-7">
+                        <h6 class="mb-0 text-end">+0.99 <small>GBP</small></h6>
+                      </div>
+                    </div>
+                   </div> 
+                    <div id="fee_2" class="hide-div">
+                      <div class="row justify-content-between mt-3 ">
+                        <div class="col-md-5 col-5">
+                         <p class="mb-0 text-dark">Fee</p>
+                        </div>
+                        <div class="col-md-6 col-7">
+                          <h6 class="mb-0 text-end">+0.59 <small>GBP</small></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-between mt-2 ">
+                      <div class="col-md-5 col-5">
+                       <p class="mb-0 text-dark">Transfer time</p>
+                      </div>
+                      <div class="col-md-6 col-7">
+                        <p class="mb-0 text-end fw-bold"><span> <a type="button" class="tx-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="9 out of 10 money transfer completes within the suggest time. For new customers, identify may extend the transfer time">
+                          <i class="fa fa-bolt text-warning" aria-hidden="true"></i>
+                          Within minutes
+                        </a>
+                      </span></p>
+                      </div>
+                    </div>
+                 
+                  <hr class="my-3">
+                  <div class="row justify-content-between">
+                    <div class="col-md-5 col-5">
+                     <p class="mb-0 text-dark">Total to pay</p>
+                    </div>
+                    <div class="col-md-6 col-7">
+                      <h5 class="mb-0 text-end">1000.99 <small>GBP</small></h5>
+                    </div>
+                  </div>
+                  <div class="row justify-content-between mt-3">
+                    <div class="col-md-5 col-5">
+                     <p class="mb-0 text-dark">Recipient gets</p>
+                    </div>
+                    <div class="col-md-6 col-7">
+                      <h6 class="mb-0 text-end">4568.99 <small>NGN</small></h6>
+                    </div>
+                  </div>
                   <div class="mt-4">
-                    <button class="btn btn-primary btn-lg w-100">Get Started</button>
+                    <a href="./login.html" class="btn btn-primary btn-lg w-100">Continue</a>
                   </div>
 
                 </form>
@@ -287,75 +385,93 @@
           </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <div class="row my-4">
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                  <a href="./bank-address">Union Bank</a>
+              <div class="col-lg-10 mx-auto">
+                <div class="row my-4 text-center justify-content-between">
+                  <div class="col-md-2 col-6 my-1">
+                    <div class="card card-body border-0 shadow-sm card-height p-2">
+                    <a href="./bank-address.html">
+                      <img src="./assets/img/Access_Bank.png" class="img-fluid" alt="" srcset="">
+                    </a>
+                    </div>
                   </div>
-                </div>
-
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">GTB</a>
+  
+                  <div class="col-md-2 col-6 my-1">
+                    <div class="card card-body border-0 shadow-sm card-height p-2">
+                      <a href="./bank-address.html">
+                      <img src="./assets/img/gtbank.jpg" class="img-fluid" alt="" srcset="">
+                      </a>
                     </div>
-                </div>
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">UBA </a>
+                  </div>
+                  <div class="col-md-2 col-6 my-1">
+                    <div class="card card-body border-0 shadow-sm card-height p-2">
+                      <a href="./bank-address.html">
+                      <img src="./assets/img/first_bank.jpg" class="img-fluid">
+                      </a>
                     </div>
-                </div>
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">First Bank</a>
+                  </div>
+                  <div class="col-md-2 col-6 my-1">
+                    <div class="card card-body border-0 shadow-sm card-height p-2">
+                      <a href="./bank-address.html">
+                      <img src="./assets/img/fidelity.jpg" class="img-fluid">
+                      </a>
                     </div>
+                  </div>
+                  <div class="col-md-2 col-6 my-1">
+                    <div class="card card-body border-0 shadow-sm card-height p-2">
+                      <a href="./bank-address.html">
+                      <img src="./assets/img/polaris_bank.jpg" class="img-fluid" alt="" srcset="">
+                      </a>
+                      </div>
+                  </div>
+                  
                 </div>
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">Zenith Bank</a>
-                    </div>
-                </div>
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">Polaris Bank</a>
-                    </div>
-                </div>
-
               </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div class="row my-4">
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                  <a href="./bank-address">Union Bank</a>
+                <div class="col-md-2 col-6 my-1">
+                  <div class="card card-body border-0 shadow-sm card-height p-2">
+                  <a href="./bank-address.html">
+                    <img src="./assets/img/Access_Bank.png" class="img-fluid pt-1" alt="" srcset="">
+                  </a>
                   </div>
                 </div>
 
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">GTB</a>
+                <div class="col-md-2 col-6 my-1">
+                  <div class="card card-body border-0 shadow-sm card-height p-2">
+                    <a href="./bank-address.html">
+                    <img src="./assets/img/gtbank.jpg" class="img-fluid" alt="" srcset="">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6 my-1">
+                  <div class="card card-body border-0 shadow-sm card-height p-2">
+                    <a href="./bank-address.html">
+                    <img src="./assets/img/first_bank.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6 my-1">
+                  <div class="card card-body border-0 shadow-sm card-height p-2">
+                    <a href="./bank-address.html">
+                    <img src="./assets/img/fidelity.jpg" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6 my-1">
+                  <div class="card card-body border-0 shadow-sm card-height p-2">
+                    <a href="./bank-address.html">
+                    <img src="./assets/img/polaris_bank.jpg" class="img-fluid" alt="" srcset="">
+                    </a>
                     </div>
                 </div>
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">UBA </a>
+                <div class="col-md-2 col-6 my-1">
+                  <div class="card card-body border-0 shadow-sm card-height p-2">
+                    <a href="./bank-address.html">
+                    <img src="./assets/img/zenith.jpg" class="img-fluid" alt="" srcset="">
+                    </a>
                     </div>
                 </div>
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">First Bank</a>
-                    </div>
-                </div>
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">Zenith Bank</a>
-                    </div>
-                </div>
-                <div class="col-md-2 my-1">
-                  <div class="card card-body border-0 shadow-sm">
-                    <a href="./bank-address">Polaris Bank</a>
-                    </div>
-                </div>
-
               </div>
             </div>
           </div>
@@ -438,6 +554,12 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
   
    <script>
 $(".dropdown-menu li a").click(function(){
@@ -449,14 +571,13 @@ $(".dropdown-menu li a").click(function(){
 });
 
 // delevery option 
-$("#dropdownOption").on('click', 'li a', function(){
-  let selText = $(this).children("h5").html();
+$("#dropdownOption,#dropdownOption1,#dropdownOption2").on('click', 'li a', function(){
+  let selText = $(this).children("h5").html().substring(0,18);
  $(this).parent('li').siblings().removeClass('active');
     $('#vl').val($(this).attr('data-value'));
   $(this).parents('.btn-group').find('.selection').html(selText);
   $(this).parents('li').addClass("active");
 });
-
 
 function filterFunction() {
   let input, filter, ul, li, a, i;
@@ -491,7 +612,15 @@ function filterFunction2() {
   }
 }   
 
-            
+  function selectMethod(show) {  
+  document.getElementById("show_"+show).style.display = "block";
+  document.getElementById("show_"+((show==1)?2:1)).style.display = "none";
+} 
+  function feeDetails(fee) {  
+  document.getElementById("fee_"+fee).style.display = "block";
+  document.getElementById("fee_"+((fee==1)?2:1)).style.display = "none";
+} 
+  
             
 // function updateOrder() {
   $('#small').change(function(){

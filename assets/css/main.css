@@ -1137,3 +1137,24 @@ textarea:focus, input:focus{
 .desk-pad{
   padding-top: 150px;
 }
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to bottom, rgba(254,150,0,1),rgba(255,129,2,1), rgba(255,100,9,1));
+  color: white;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background: rgba(255,100,9,1);
+}
